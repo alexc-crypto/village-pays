@@ -1,0 +1,61 @@
+<style>
+#button-sommaire{
+display: block;
+max-width: 67em;
+margin: 0 auto;
+padding: 4px;
+font-size: 1.4em;
+font-weight: 600;
+border: none;
+height: 100%;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color .2s linear;
+}
+ :is(#button-sommaire:hover, #button-sommaire:focus) {
+color: rgb(255, 255, 255);
+background-color: rgb(51, 51, 51);
+}
+ :root {
+--header-height: 40px;
+}
+*{box-sizing: border-box; margin: 0;}
+#header {
+display: flex;
+justify-content: center; align-items: start;
+position: fixed;
+z-index: 100;
+width: 100%;
+height: var(--header-height);
+}
+[id^='ref'] {
+scroll-margin-top: calc(var(--header-height) + 32px);
+}
+main{
+position: relative; display: flex; flex-direction: column; justify-content: center; top: var(--header-height);
+}
+#sommaire-wrapper {
+height: calc(100vh - calc(var(--header-height) + 140px));
+}
+
+.sommaire {
+top: var(--header-height);
+width: 100%;
+max-width: 63em;
+overflow: scroll;
+padding: 0.5em;
+padding-bottom: 80px;
+margin: 0 auto;
+background-color: #fef;
+color: #333;
+line-height: 1.4em;
+text-align: left;
+box-shadow: 1px 1px 1px #888;
+font-size: 1em;
+border-radius: 0.5em;
+box-sizing: border-box;
+word-break: break-word;
+/*hyphens: auto;
+position: sticky; top: 0; max-height: 30vh; overflow-y: auto; z-index: 10;*/
+}
+</style> 
