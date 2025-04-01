@@ -102,7 +102,8 @@ border-radius: 3px; */
 font-size: 0.9em
 }
 .surlign {
-background-color: #ff0;
+/*background-color: #ff0;*/
+background-color: rgb(255,255,0,0.8);
 transition: background-color 1s ease;
 padding: 1px 5px;
 margin: 0 3px;
@@ -164,6 +165,7 @@ box-shadow: 1px 1px 1px #ddd;
 text-decoration: none;
 line-height: 160%;
 }
+
 a[target="_blank"]:after {
 content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E);
 margin: 0 3px 0 1px
@@ -199,6 +201,7 @@ font-size: 0.8em;
 float: right;
 margin: 0 0 1em 1em;
 }
+
 .image3 {
 max-width: 1024px;
 max-height: 720px;
@@ -207,6 +210,7 @@ margin: 0 auto;
 display: block;
 font-size: 0.8em;
 }/*parc Aimé Césaire*/
+
 .image4 {
 max-width: 128px;
 max-height: 86px;
@@ -216,6 +220,7 @@ display: block;
 font-size: 0.8em;
 margin: 0;
 }/*drapeau de Trinidad*/
+
 .image5 {
 max-width: 350px;
 max-height: 797px;
@@ -225,6 +230,7 @@ font-size: 0.8em;
 margin: 0 0 1em 1em;
 float: right;
 }/*banque de gènes cacao*/
+
 .image5b {
 max-width: 1200px;
 max-height: 797px;
@@ -234,6 +240,7 @@ font-size: 0.8em;
 margin: 0 auto;
 }
 /*banque de gènes cacao grand*/
+
 .image6 {
 max-width: 128px;
 max-height: 86px;
@@ -243,6 +250,7 @@ display: block;
 font-size: 0.8em;
 margin: 0;
 } /*drapeau de la Martinique */
+
 .image7 {
 max-width: 350px;
 max-height: 1024px;
@@ -252,6 +260,7 @@ float: right;
 margin: 0 0 1em 1em;
 font-size: 0.8em;
 } /* bière Kalinago */
+
 .image7b {
 max-width: 1024px;
 max-height: 685px;
@@ -260,6 +269,7 @@ margin: 0 auto;
 display: block;
 font-size: 0.8em;
 }/*bière Kalinago grand*/
+
 .image8 {
 max-width: 350px;
 max-height: 1024px;
@@ -270,6 +280,7 @@ margin: 0 0 1em 1em;
 font-size: 0.8em;
 }
 /* bird sanctuary */
+
 .image8b {
 max-width: 1024px;
 max-height: 685px;
@@ -279,6 +290,7 @@ margin: 0 auto;
 font-size: 0.8em;
 }
 /*bird sanctuary grand*/
+
 .image9 {
 max-width: 350px;
 max-height: 1024px;
@@ -288,6 +300,7 @@ float: right;
 margin: 0 0 1em 1em;
 font-size: 0.8em;
 } /* paramin et la cascade de Maracas */
+
 .image9b {
 max-width: 350px;
 max-height: 1024px;
@@ -296,6 +309,7 @@ display: block;
 margin: 0 auto;
 font-size: 0.8em;
 } /* paramin et la cascade de Maracas grand */
+
 .logo {
 max-width: 300px;
 max-height: 100px;
@@ -304,6 +318,7 @@ color: #a00;
 margin: 0 1em 0 0;
 /*float: left;*/
 }
+
 .logo img {
 width: 80%;
 }
@@ -537,7 +552,7 @@ display: block;
 text-align: center;
 position: sticky;
 /*top: 20px;*/
-top: 0;
+top: -20px;
 left: 0;
 font-size: 1.5em;
 z-index: 1000;
@@ -547,18 +562,7 @@ border-radius: 5px;
 margin-top: -60px;
 margin-bottom: 0;
 }
-.bouton-toc a.surlign {
-/* color: #fff; */
-background-color: #ff0;
-text-decoration: none;
-font-weight: bold;
-transition: color 0.3s;
-}
-/*
-.bouton-toc a.surlign6:hover {
-color: #f4d03f;
-}
-*/
+
 /* Popup */
 .modal {
 visibility: hidden;
@@ -681,6 +685,13 @@ width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.3); /* Overlay sombre semi-transparent */
 }
+.ancre {
+margin: 0 auto;
+box-sizing: border-box;
+display: block;
+width: 0.1em; 
+height:0.1em;
+}
 </style>
 </head>
 <body>
@@ -692,7 +703,7 @@ background: rgba(0, 0, 0, 0.3); /* Overlay sombre semi-transparent */
 </header>
 <!-- Bouton pour ouvrir la popup -->
 <div class="bouton-toc">
-<a class="surlign6" href="#toc">Sommaire ➡️</a>
+<a class="surlign" href="#toc">Sommaire ➡️</a>
 </div>
 <!-- Popup -->
 <div class="modal" id="toc" role="dialog" aria-labelledby="sommaire-title">
@@ -833,7 +844,7 @@ martiniquais</a></li>
 </li>
 <li><a href="#ref-01-17-00">L'intérêt pour la Collectivité territoriale de Martinique.</a>
 <ol>
-<li><a href="#ref-01-16-01">Mise en avant du rôle de la Collectivité Territoriale de Martinique.</a>
+<li><a href="#ref-01-17-01">Mise en avant du rôle de la Collectivité Territoriale de Martinique.</a>
 </li>
 </ol>
 </li>
@@ -846,7 +857,6 @@ martiniquais</a></li>
 </div>
 <p><a href="#" class="surlign2" style="position: fixed; z-index: 100; bottom: 10px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
 <h1 id="ref-01-00-00" class="exergue">VILLAGE DE PAYS - VILLAGE MARTINIQUE</h1>
-</nav>
 <main>
 <div class="page">
 <br style="margin-bottom: 5em;">
@@ -860,7 +870,8 @@ VOUS PRÉSENTE&nbsp;:<br>
 </p>
 <strong>«&nbsp;Village DE PAYS&nbsp;»</strong> <br><b>/</b><br> <strong>«&nbsp;Village MARTINIQUE&nbsp;»</strong><br>
 </div>
-<h2 class="manus" id="ref-01-01-00" style="text-align: center;">Mise en scène de messages et d’espaces</h2>
+<a class="ancre" id="ref-01-01-00">&nbsp;</a>
+<h2 class="manus" style="text-align: center;">Mise en scène de messages et d’espaces</h2>
 <div class="image1">
 <div class="medallion">
 <img src="images-projet-village/Valerie.png" alt="Photo de Valérie Charlery - canopyeventdesign.com">
@@ -873,7 +884,8 @@ présenter le projet&nbsp;:<br>
 </div>
 </div>
 <br><br>
-<h2 class="manus" style="margin-top: 1em;" id="ref-01-02-00">LA MARTINIQUE<br>
+<p><a class="ancre" id="ref-01-02-00"></a></p>
+<h2 class="manus" style="margin-top: 1em;">LA MARTINIQUE<br>
 À LA RENCONTRE DU MONDE&nbsp;!</h2>
 <blockquote>
 <p class="surlign5">
@@ -905,7 +917,8 @@ d’un événement qui se veut fédérateur.</p><br>
 Martiniquais au <span class="surlign5">«&nbsp;Village de Pays&nbsp;»</span>.</b></p><br>
 <p><b>L’expérience sera réciproque, car la Martinique sera à son tour mise en lumière dans chacun des pays
 accueillis grâce au <span class="surlign5">«&nbsp;Village Martinique&nbsp;»</span> qui s’exportera.</b></p><br>
-<h3 id="ref-01-02-01">Les objectifs</h3>
+<a class="ancre" id="ref-01-02-01"></a>
+<h3>Les objectifs</h3>
 <ul class="coche">
 <li><b>Renforcer les liens</b> entre la Martinique et d'autres pays ou régions, en s'enrichissant de leurs
 savoir-faire et savoir-être et en partageant les nôtres.</li>
@@ -921,7 +934,8 @@ talents, cuisiniers, vidéastes, concepteurs 3D, commerciaux bilingues, étudian
 <li><b>Créer une vraie réflexion stratégique</b> en fédérant le maximum de partenaires institutionnels et
 économiques autour du projet et en impliquant la diaspora expatriée.</li>
 </ul><br>
-<h3 id="ref-01-02-02">Les axes</h3>
+<a class="ancre" id="ref-01-02-02"></a>
+<h3>Les axes</h3>
 <ol>
 <li><strong class="allsmall">Économie</strong><br>
 Opportunités d'import-export, d'investissements et de développement de partenariats commerciaux et artisanaux.
@@ -934,7 +948,8 @@ leurs savoir-faire.</li>
 <li><strong class="allsmall">Culture</strong><br>
 Exploration de la gastronomie, de la musique, de la danse et de l’artisanat.</li>
 </ol><br>
-<h3 id="ref-01-02-03">«&nbsp;Village de Pays&nbsp;»&nbsp: une plateforme d'échange.</h3>
+<a class="ancre" id="ref-01-02-03"></a>
+<h3>«&nbsp;Village de Pays&nbsp;»&nbsp: une plateforme d'échange.</h3>
 <div class="image2"><img src="images-projet-village/70ec84db2.png" width="350" height="1200" alt=""></div>
 <p><b>«&nbsp;Village de Pays&nbsp;»</b> permettra à nos compatriotes martiniquais d’aller à la rencontre de cultures
 différentes, à la découverte de pays ou de régions depuis chez eux, tout en leur donnant envie d’aller plus loin
@@ -949,7 +964,8 @@ et riche en échanges.</p>
 <li>4 Publics ciblés</li>
 <li>3 Thématiques principales</li>
 </ul><br>
-<h3 id="ref-01-02-04">«&nbsp;Village Martinique&nbsp;»&nbsp: une vitrine mobile et modulable.</h3>
+<a class="ancre" id="ref-01-02-04"></a>
+<h3>«&nbsp;Village Martinique&nbsp;»&nbsp: une vitrine mobile et modulable.</h3>
 <p><b>«&nbsp;Village Martinique&nbsp;»</b> se doit d’être un extrait condensé et vibrant de notre Martinique. Il
 regroupera l’excellence dans chaque domaine et impliquera la population dans la sélection. Un mécanisme médiatique
 permettra à la population de voter pour les candidats dans les différents domaines qui seront chargés de nous
@@ -965,8 +981,10 @@ sur des événements d’envergure emblématiques du pays ou de la région qu'il
 </ul>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-03-00" class="manus">Village de Pays&nbsp;: Le Modèle</h2>
-<h3 id="ref-01-03-01">Un événement bien ciblé sur quatre jours</h3>
+<a class="ancre" id="ref-01-03-00"></a>
+<h2 class="manus">Village de Pays&nbsp;: Le Modèle</h2>
+<a class="ancre" id="ref-01-03-01"></a>
+<h3>Un événement bien ciblé sur quatre jours</h3>
 <br>
 <h4 class="allsmall">Jeudi&nbsp;: coopération et économie</h4>
 <ul class="coche">
@@ -1029,8 +1047,10 @@ spectacle sous le dôme.</li>
 </div><br>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-04-00" class="manus">Les Espaces</h2>
-<h3 id="ref-01-04-01" class="allsmall">Le parc Aimé Césaire&nbsp;: un hub mondial.</h3>
+<a class="ancre" id="ref-01-04-00"></a>
+<h2 class="manus">Les Espaces</h2>
+<a class="ancre" id="ref-01-04-01"></a>
+<h3 class="allsmall">Le parc Aimé Césaire&nbsp;: un hub mondial.</h3>
 <div class="image3"><a href="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg"><img src="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg" width="1024" height="685" alt="Le parc Aimé Césaire, un hub mondial"></a>Le parc Aimé Césaire&nbsp;: vue de l'intérieur du parc. [Cliquer sur l'image pour l'agrandir].<br>
 Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DDesktop" target="blank">«&nbsp;Street View dans Google Maps&nbsp;»</a></div><br><br>
 <div class="conteneur2b" style="display: inline-block;">
@@ -1040,7 +1060,8 @@ Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="http
 <p>Dans le cadre magique et symbolique du Parc Aimé Césaire, l’Agence Canopy Event &amp; Design souhaite plonger les participants dans l’ambiance du pays à l’aide de procédés immersifs innovants, tels que le mapping vidéo, le son, la lumière et d’autres éléments sensoriels qui <b>feront vivre aux participants une expérience unique</b>.</p><br>
 <p>C'est l'ensemble du parc qui sera consacré à cet événement avec des espaces dédiés aux animations et aux
 expositions, sous des infrastructures éphémères, répartis selon la projection suivante&nbsp;:</p>
-<h3 id="ref-01-04-02" class="allsmall">DANS LE PARC</h3>
+<a class="ancre" id="ref-01-04-02"></a>
+<h3 class="allsmall">DANS LE PARC</h3>
 <ul class="coche">
 <li><b>Espaces animations</b>
 <ul class="disc">
@@ -1079,7 +1100,8 @@ centres de formation ou d’écoles hôtelières/cuisine en soutien</li>
 </ul>
 </li>
 </ul>
-<h3 id="ref-01-04-03" class="allsmall">Sous le Grand carbet</h3>
+<a class="ancre" id="ref-01-04-03"></a>
+<h3 class="allsmall">Sous le Grand carbet</h3>
 <ul class="coche">
 <li>Tables rondes/conférences</li>
 <li>Spectacles de danse</li>
@@ -1091,9 +1113,11 @@ centres de formation ou d’écoles hôtelières/cuisine en soutien</li>
 «&nbsp;Village Pays&nbsp;»&nbsp;: Édition N°1
 </span>
 </div>
-<h2 id="ref-01-05-00" class="manus">Trinidad &amp; Tobago</h2>
+<a class="ancre" id="ref-01-05-00"></a>
+<h2 class="manus">Trinidad &amp; Tobago</h2>
 <p><strong>À la Martinique en Octobre 2025</strong></p>
-<h3 id="ref-01-05-01" class="allsmall">Zoom sur l'une des îles les plus prospères de la Caraïbe</h3><br>
+<a class="ancre" id="ref-01-05-01"></a>
+<h3 class="allsmall">Zoom sur l'une des îles les plus prospères de la Caraïbe</h3><br>
 <p class="surlign5">La première édition de «&nbsp;Village Pays&nbsp;» sera consacrée à la petite République
 anglophone, composée de deux îles qui offrent un mélange attrayant d'activités culturelles et d'éco-aventures.</p>
 <br>
@@ -1134,7 +1158,8 @@ gastronomie.</b></p>
 <p>&nbsp;</p>
 <br>
 <hr class="point" style="width: 60%;"><br>
-<h3 id="ref-01-06-01" class="allsmall" class="allsmall">Les attraits pour le pays</a></h3>
+<a class="ancre" id="ref-01-06-01"></a>
+<h3 class="allsmall" class="allsmall">Les attraits pour le pays</a></h3>
 <ul class="coche">
 <li>Compte tenu de notre proximité géographique, il était important pour nous de lancer le concept
 <b>«&nbsp;Village de Pays / Village Martinique&nbsp;»</b> avec un pays situé dans le bassin caribéen. La
@@ -1153,7 +1178,8 @@ Martinique</li>
 2025.</li>
 </ul>
 </blockquote>
-<h3 id="ref-01-06-02" class="allsmall">Grands sujets d'intérêts communs</a></h3>
+<a class="ancre" id="ref-01-06-02"></a>
+<h3 class="allsmall">Grands sujets d'intérêts communs</a></h3>
 <ul class="coche">
 <li>Gaz naturel</li>
 <li>Construction</li>
@@ -1189,7 +1215,8 @@ title="YouTube video player"></iframe>
 <hr class="point" style="width: 60%;"><br>
 <p>&nbsp;</p>
 <p>1&nbsp;ÉCONOMIE</p>
-<h3 id="ref-01-07-01" class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent
+<a class="ancre" id="ref-01-07-01"></a>
+<h3 class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent
 martiniquais</h3>
 <h4 class="allsmall">Jeudi 16 octobre 2025</h4>
 <ul class="disc">
@@ -1248,7 +1275,8 @@ une bière artisanale à base de manioc fabriquée en Martinique</li>
 <p>&nbsp;</p>
 <br>
 <hr class="point clearfix" style="width: 60%;"><br>
-<h3 id="ref-01-08-01">Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</h3><br>
+<a class="ancre" id="ref-01-08-01"></a>
+<h3>Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</h3><br>
 <div class="center">
 <div class="image7">
 <a href="images-projet-village/Caroni-Bird-Sanctuary.jpg"><img src="images-projet-village/Caroni-Bird-Sanctuary.jpg" width="1024" height="685"
@@ -1323,7 +1351,8 @@ width="560" height="395"></iframe>
 <p>&nbsp;</p>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-09-00" class="manus allsmall">Un plan de communication conséquent</h2>
+<a class="ancre" id="ref-01-09-00"></a>
+<h2 class="manus allsmall">Un plan de communication conséquent</h2>
 <h3 id="ref-01-09-01" class="allsmall">Plan Média</h3>
 <table style="border-collapse: collapse; width: 100%;">
 <tr>
@@ -1391,8 +1420,10 @@ Via les supports de communication et les espaces physiques de nos partenaires Pu
 <p>&nbsp;</p>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-10-00" class="manus">Le village Martinique&nbsp;: Le Modèle</h2>
-<h3 id="ref-01-10-01">Un événement grand public sur deux jours</h3><br>
+<a class="ancre" id="ref-01-10-00"></a>
+<h2 class="manus">Le village Martinique&nbsp;: Le Modèle</h2>
+<a class="ancre" id="ref-01-10-01"></a>
+<h3>Un événement grand public sur deux jours</h3><br>
 <p>Le Village Martinique sera mobile, modulable et résolument opportuniste. L’objectif étant d’être vu par le plus grand nombre. Chaque fois que cela sera possible, nous essayerons de nous greffer sur des manifestations
 d’envergure propres à chaque pays.</p><br>
 <p><i>NB&nbsp;: Le village sera coconstruit avec les acteurs institutionnels ciblés.</i></p><br>
@@ -1418,7 +1449,8 @@ d’envergure propres à chaque pays.</p><br>
 <br>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-11-00" class="manus"> Les Espaces</h2>
+<a class="ancre" id="ref-01-11-00"></a>
+<h2 class="manus"> Les Espaces</h2>
 <ul class="coche">
 <li><b>Espaces animations</b>
 <ul class="disc">
@@ -1463,11 +1495,13 @@ accompagnés des élèves de centres de formation ou d’écoles hôtelières/cu
 </ul>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-12-00" class="manus">L'intérêt pour Fort de France</h2>
+<a class="ancre" id="ref-01-12-00"></a>
+<h2 class="manus">L'intérêt pour Fort de France</h2>
 <p><b class="tpetit">Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et
 les valeurs que vous portez. Mettre votre structure et vos actions en lumière sans avoir a supporter
 l’ingénierie et l’investissement financier seul en soutenant un projet d’intérêt général.</b></p>
-<h3 id="ref-01-12-01">Animation de la ville et émulation écononomique</b></h3>
+<a class="ancre" id="ref-01-12-01"></a>
+<h3>Animation de la ville et émulation écononomique</b></h3>
 <ul class="coche">
 <li><b>Faire du Parc Aimé Césaire, un «&nbsp;Hub&nbsp;» d’échanges et de liaisons internationales et un lieu de
 visites mémorielles «&nbsp;Art et Nature&nbsp;» en hommage à Aimé Césaire.</b><br><br>
@@ -1496,7 +1530,8 @@ la gastronomie du «&nbsp;Pays reçu&nbsp;»</b></li>
 </ul>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-13-00" class="manus">L'intérêt pour la Fondation Aimé Césaire</h2>
+<a class="ancre" id="ref-01-13-00"></a>
+<h2 class="manus">L'intérêt pour la Fondation Aimé Césaire</h2>
 <ol>
 <li><b>Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et les valeurs
 que vous portez.</b></li>
@@ -1531,14 +1566,16 @@ des décors ou encore participer à la performance visuelle (danse, animation 3D
 </ul>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-14-00" class="manus">L'intérêt pour la Chambre de Métiers et de l'Artisanat</h2>
+<a class="ancre" id="ref-01-14-00"></a>
+<h2 class="manus">L'intérêt pour la Chambre de Métiers et de l'Artisanat</h2>
 <ol>
 <li><b>Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et les valeurs
 que vous portez.</b></li>
 <li><b>Mettre votre structure et vos actions en lumière sans avoir a supporter l’ingénierie et l’investissement
 financier seul, tout en soutenant un projet d’intérêt général.</b></li>
 </ol>
-<h3 id="ref-01-14-01">Mise en exergue de la Chambre de Métiers et de l'Artisanat de Martinique</h3><br>
+<a class="ancre" id="ref-01-14-01"></a>
+<h3>Mise en exergue de la Chambre de Métiers et de l'Artisanat de Martinique</h3><br>
 <p>Sur toutes les questions relatives aux compétences qui vous sont dévolues&nbsp;: accompagnement et développement
 de l’artisanat local, formation professionnelle.</p><br>
 <p><b>De votre rôle dans le développement et l’accompagnement des entreprises artisanales</b></p>
@@ -1584,14 +1621,16 @@ communication de l'événement&nbsp;:
 <i><b>Une belle opération de communication dans laquelle les jeunes participants porteront les couleurs de la Chambre et de l’événement.</b></i><br><br>
 <br>
 <hr class="point"><br>
-<h2 id="ref-01-15-00" class="manus">L'intérêt pour la Chambre de Commerce et d'Industrie de la Martinique</h2>
+<a class="ancre" id="ref-01-15-00"></a>
+<h2 class="manus">L'intérêt pour la Chambre de Commerce et d'Industrie de la Martinique</h2>
 <ol>
 <li><b>Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et les valeurs
 que vous portez.</b></li>
 <li><b>Mettre votre structure et vos actions en lumière sans avoir a supporter l’ingénierie et l’investissement
 financier seul, tout en soutenant un projet d’intérêt général.</b></li>
 </ol>
-<h3 id="ref-01-15-01">Mise en exergue de Chambre de Commerce et d'Industrie de la Martinique (CCIM)</h3>
+<a class="ancre" id="ref-01-15-01"></a>
+<h3>Mise en exergue de Chambre de Commerce et d'Industrie de la Martinique (CCIM)</h3>
 <p><b>Sur toutes les questions relatives aux compétences qui vous sont dévolues&nbsp;: accompagnement et
 développement de l’artisanat local, formation professionnelle, aménagement du territoire.</b></p>
 <h4>En matière de développement économique avec&nbsp;:</h4>
@@ -1638,14 +1677,16 @@ martiniquais.</li>
 <br>
 <br>
 <hr class="point clearfix"><br>
-<h2 id="ref-01-16-00" class="manus">L'intérêt pour le Comité Martiniqais du Tourisme</h2>
+<a class="ancre" id="ref-01-16-00"></a>
+<h2 class="manus">L'intérêt pour le Comité Martiniqais du Tourisme</h2>
 <ol>
 <li>Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et les valeurs
 que vous portez.</li>
 <li>Mettre votre structure et vos actions en lumière sans avoir a supporter l’ingénierie et l’investissement
 financier seul, tout en soutenant un projet d’intérêt général.</li>
 </ol>
-<h3 id="ref-01-16-01">Mise en exergue de l'action du Comité Martiniquais du Tourisme (CMT)</h3><br>
+<a class="ancre" id="ref-01-16-01"></a>
+<h3>Mise en exergue de l'action du Comité Martiniquais du Tourisme (CMT)</h3><br>
 <p><b>Sur toutes les questions relatives aux compétences et aux missions qui vous sont dévolues&nbsp;: faire de la
 Martinique une destination touristique recherchée et prospère par sa mise en valeur auprès du grand public et
 par la promotion de la destination auprès des professionnels du tourisme.</b></p><br>
@@ -1683,7 +1724,8 @@ title="YouTube video player"></iframe>
 </div>
 <br style="margin-bottom: 1em;">
 <hr class="point">
-<h2 id="ref-01-17-00" class="manus">L'intérêt pour la Collectivité Territoriale de Martinique</h2>
+<a class="ancre" id="ref-01-17-00"></a>
+<h2 class="manus">L'intérêt pour la Collectivité Territoriale de Martinique</h2>
 <ol>
 <li><b>Rejoindre un projet commun avec une approche à 360° en complète adéquation avec les missions et les valeurs
 que vous portez.</b></li>
@@ -1691,7 +1733,8 @@ que vous portez.</b></li>
 financier seul, tout en soutenant un projet d’intérêt général.</b></li>
 </ol>
 <p><i><b>«&nbsp;Ensemble, construisons demain&nbsp;!&nbsp;»</b></i></p>
-<h3 id="ref-01-17-01">Mise en avant du rôle de la Collectivité Territoriale de Martinique&nbsp;:</h3>
+<a class="ancre" id="ref-01-17-01"></a>
+<h3>Mise en avant du rôle de la Collectivité Territoriale de Martinique&nbsp;:</h3>
 <h4>en matière d’intégration régionale et de diplomatie territoriale</h4>
 <ul class="coche">
 <li>«&nbsp;Village de Pays / Village Martinique&nbsp;» est un événement d’envergure qui s’accorde complètement
@@ -1727,7 +1770,8 @@ Martinique.</b><br>
 </ul>
 <br>
 <div class="rondrouge">
-<h2 id="ref-01-18-00" class="manus">À bientôt</h2>
+<a class="ancre" id="ref-01-18-00"></a>
+<h2 class="manus">À bientôt</h2>
 <p><b>MERCI<br>
 DE<br>
 VOTRE<br>
