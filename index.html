@@ -37,7 +37,7 @@ padding: 3.05%;
 margin: 0 auto;
 background-color: #fff;
 color: #000;
-font-size: 1.0em;
+font-size: 1.2em;
 position: relative;
 }
 h1,h2,h3,h4 {
@@ -427,15 +427,16 @@ border-radius: 1em;
 border-radius: 30em;
 margin-bottom: -1em;
 }
-/* @media screen and (max-width: 700px) { */
 @media screen and (max-width: 768px) {
 .center {
 display: flex;
 width: 100%;
 align-items: center;
 justify-content: center;
+font-size: 1em;
 }
 }
+
 .rondrouge {
 max-width: 20em;
 max-height: 20em;
@@ -463,12 +464,12 @@ line-height: 1.2em;
 box-sizing: border-box;
 word-break: break-all;
 }
-/* @media screen and (max-width: 700px) { */
 @media screen and (max-width: 768px) {
 .rondrouge-small {
 padding: .4em;
 margin: 0 auto;
 margin-top: .4em;
+font-size: 1em;
 }
 }
 .clearfix {
@@ -493,8 +494,7 @@ table,th,td {
 border: solid 1px #7CA0B5;
 border-collapse: collapse;
 border-spacing: 0;
-/* word-break: normal; */
-overflow-wrap: anywhere;
+overflow-wrap: break-word;
 }
 table {
 margin: 0 auto;
@@ -701,7 +701,6 @@ height:0.1em;
 <body>
 <!-- En-tête avec l'image en arrière-plan -->
 <header class="hero" id="haut">
-
 <div class="hero-content">
 <p>Un coin de paradis caribéen</p>
 </div>
@@ -861,7 +860,7 @@ martiniquais</a></li>
 </div>
 </div>
 </div>
-<p><a href="#haut" class="surlign2" style="position: fixed; z-index: 100; bottom: 10px; right: 25px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
+<p><a href="#haut" class="surlign2" style="position: fixed; z-index: 100; bottom: 15px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
 <h1 id="ref-01-00-00" class="exergue">VILLAGE DE PAYS - VILLAGE MARTINIQUE</h1>
 <main>
 <div class="page">
@@ -932,8 +931,7 @@ Opportunités d'import-export, d'investissements et de développement de partena
 <li><strong class="allsmall">Tourisme</strong><br>
 Présentation des hôtels, des événements et des sites touristiques phares.</li>
 <li><strong class="allsmall">Leadership des jeunes</strong><br>
-Propositions de stages dans de grandes entreprises de part et d'autre, échanges linguistiques, mise en valeur de
-leurs savoir-faire.</li>
+Propositions de stages dans de grandes entreprises de part et d'autre, échanges linguistiques, mise en valeur de leurs savoir-faire.</li>
 <li><strong class="allsmall">Culture</strong><br>
 Exploration de la gastronomie, de la musique, de la danse et de l’artisanat.</li>
 </ol>
@@ -1108,7 +1106,7 @@ centres de formation ou d’écoles hôtelières/cuisine en soutien</li>
 <h2 class="manus">Trinidad &amp; Tobago</h2>
 <p><strong>À la Martinique en Octobre 2025</strong></p>
 <a class="ancre" id="ref-01-05-01"></a>
-<h3 class="allsmall">Zoom sur l'une des îles les plus prospères de la Caraïbe</h3><br>
+<h3 class="allsmall">Zoom sur l'une des îles les plus prospères de la Caraïbe</h3>
 <p class="surlign5">La première édition de «&nbsp;Village Pays&nbsp;» sera consacrée à la petite République anglophone, composée de deux îles qui offrent un mélange attrayant d'activités culturelles et d'éco-aventures.</p>
 <br>
 <p>Située à la pointe du Venezuela, la vivante Trinité, la plus grande des deux îles, offre une vie nocturne très
@@ -1144,7 +1142,9 @@ principales seront abordées à travers les tables rondes, les conférences, les
 </ul>
 <br><hr class="point" style="width: 60%;"><br>
 <a class="ancre" id="ref-01-05-02"></a>
+
 <h3 class="allsmall">Tableau Comparatif&nbsp;: Martinique vs Trinidad &amp; Tobago</h3>
+<div class="center">
 <table style="border-collapse: collapse; width: 100%; table-layout: fixed;">
 <thead>
 <tr>
@@ -1205,7 +1205,9 @@ principales seront abordées à travers les tables rondes, les conférences, les
 </td>
 </tr>
 </tbody>
-</table><br>
+</table>
+</div>
+<br>
 <br><hr class="point" style="width: 60%;"><br>
 <a class="ancre" id="ref-01-06-01"></a>
 <h3 class="allsmall">Les attraits pour le pays</a></h3>
