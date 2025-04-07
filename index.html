@@ -13,6 +13,9 @@ href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQAAAAA3iMLMAAAACXBI
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 <style>
 html,body,div,h1,h2,h3,h4,p {
 margin: 0;
@@ -25,10 +28,10 @@ line-height: 140%
 }
 body {
 font-size: 1em;
-font-family: "Trebuchet MS", Verdana, Arial, Geneva, Helvetica, sans-serif;
+font-family: "Roboto", Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif;
 background-color: #eee;
 color: #000;
-font-weight: normal;
+font-weight: 300;
 text-align: left
 }
 .page {
@@ -39,17 +42,37 @@ background-color: #fff;
 color: #000;
 font-size: 1.2em;
 position: relative;
-font-weight: normal;
+font-weight: 300;
 }
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+ /* font-optical-sizing: auto; */
+  font-weight: 900;
+  font-style: normal;
+}
+
 h1,h2,h3,h4 {
 font-family: inherit;
 font-weight: bold;
 }
+
 h1 {
 color: #400;
 font-size: 2em;
 margin: 2em 0;
 }
+
 h2,
 .h2 {
 color: #400;
@@ -72,7 +95,7 @@ font-weight: bold;
 
 b {
 font-size: 110%;
-font-weight: bold;
+font-weight: 600;
 }
 
 .exergue {
@@ -320,6 +343,35 @@ margin: 0 auto;
 font-size: 12.8px;
 } /* paramin et la cascade de Maracas grand */
 
+.image10 {
+max-width: 1280px;
+max-height: 720px;
+color: #a00;
+display: block;
+margin: 0 auto;
+font-size: 12.8px;
+} /* under canopy event */
+
+.image11 {
+max-width: 454px;
+max-height: 400px;
+color: #a00;
+display: block;
+margin: 0 auto;
+font-size: 12.8px;
+text-align: center;
+} /* Fondation Aimé Césaire */
+
+.image12 {
+max-width: 300px;
+max-height: 340px;
+color: #a00;
+display: block;
+margin: 1em auto;
+font-size: 12.8px;
+text-align: center;
+} /* cartoon Aimé Césaire */
+
 .logo {
 max-width: 300px;
 max-height: 100px;
@@ -370,7 +422,7 @@ font-variant-caps: all-small-caps;
 .manus {
 text-align: center;
 font-family: "Playfair Display", serif;
-/*font-optical-sizing: auto;*/
+/* font-optical-sizing: auto; */
 font-style: normal;
 color: #a00;
 }
@@ -480,7 +532,6 @@ line-height: 1.2em;
 box-sizing: border-box;
 word-break: break-all;
 }
-
 
 .clearfix {
 clear: both;
@@ -673,7 +724,7 @@ padding: 1em;
 }
 .sommaire {
 font-size: 1em;
-max-height: 70vh;
+max-height: 90vh;
 }
 .sommaire h2 {
 font-size: 1.3rem;
@@ -683,8 +734,9 @@ font-size: 1.3rem;
 /* Style du header avec l'image en arrière-plan */
 .hero {
 position: relative;
-height: 100vh; /* Hauteur pleine écran */
-background-image: url('fort-de-france.jpg');
+height: 50vh; /* Hauteur pleine écran */
+/* background-image: url('fort-de-france.jpg'); */
+background-image: url('Ville-de-Fort-de-France2.jpg');
 background-size: cover;
 background-position: center;
 display: flex;
@@ -699,7 +751,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: rgba(0, 0, 0, 0.3); /* Overlay sombre semi-transparent */
+background: rgba(0, 0, 0, 0); /* Overlay sombre semi-transparent */
 }
 .ancre {
 margin: 0 auto;
@@ -714,7 +766,7 @@ height:0.1em;
 <!-- En-tête avec l'image en arrière-plan -->
 <header class="hero" id="haut">
 <div class="hero-content">
-<p>Vue la ville de Fort de France</p>
+<p>La baie de Fort de France</p>
 </div>
 </header>
 <!-- Bouton pour ouvrir la popup -->
@@ -818,8 +870,7 @@ height:0.1em;
 <li><a href="#ref-01-05-02">Tableau Comparatif : Martinique vs Trinidad & Tobago</a></li>
 <li><a href="#ref-01-06-01">Les attraits pour le pays</a></li>
 <li><a href="#ref-01-06-02">Grands sujets d'intérêt communs</a></li>
-<li><a href="#ref-01-07-01">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent
-martiniquais</a></li>
+<li><a href="#ref-01-07-01a">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent martiniquais</a></li>
 <li><a href="#ref-01-08-01">Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</a></li>
 </ol>
 </li>
@@ -917,6 +968,8 @@ créer un espace d'échanges et de découvertes entre la Martinique et d'autres 
 <p>Chaque année, un pays ou une région, soit proche géographiquement, historiquement, culturellement ou répondant à un attrait structurel, économique ou sociétal, sera sélectionné et présenté sous toutes ses facettes aux Martiniquais au <span class="surlign5">«&nbsp;Village de Pays&nbsp;»</span>.</p><br>
 <p>L’expérience sera réciproque, car la Martinique sera à son tour mise en lumière dans chacun des pays
 accueillis grâce au <span class="surlign5">«&nbsp;Village Martinique&nbsp;»</span> qui s’exportera.</p>
+<br>
+<div class="image10"><img src="images-projet-village/under-canopy-event.png" width="640" height="360" alt="under canopy event"></div>
 <a class="ancre" id="ref-01-02-01"></a>
 <h3>Les objectifs</h3>
 <ul class="coche">
@@ -1039,7 +1092,8 @@ spectacle sous le dôme.</li>
 <li><strong class="allsmall">Week-end : Culture grand public</strong> (spectacles, ateliers, restauration).</li>
 </ul>
 <br>
-<div class="rondrouge">
+<div class="rondrouge" style="background-image: url('images-projet-village/blob_adbf51db2.png');
+background-size: cover; background-position: center;font-weight: bold;">
 <p>Tables rondes / Conférences</p><br>
 <p>Animations / Jeux</p><br>
 <p>Expo. vente / Restauration</p><br>
@@ -1057,7 +1111,7 @@ spectacle sous le dôme.</li>
 Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DDesktop" target="blank">«&nbsp;Street View dans Google Maps&nbsp;»</a></div><br>
 <div class="conteneur2b" style="display: inline-block;">
 <iframe src="https://www.google.com/maps/embed?pb=!4v1743036383858!6m8!1m7!1sCAoSLEFGMVFpcE9tTVBDa0VyNXAwT2dubFJfRnoyNjEyOVpud1lBcVZJVE1RbWpC!2m2!1d14.60763870037384!2d-61.07216201103901!3f322.70619230260456!4f-0.9103431688163255!5f2.554641168909145" width="600" height="450" style="border:0;"></iframe></div>
-<div style="width: 100%; margin: 0 auto; font-size:12.8px; color: #a00; line-height: 1em;">Le quartier du parc Aimé Césaire. Vue panoramique 360°. Cliquer sur le lien en haut à gauche pour accéder à Google Maps. (Google maps vous permet d'effectuer une visite virtuelle panoramique de divers lieux de la Martinique et d'ailleurs).</div>
+<div style="width: 100%; margin: 0 auto; font-size:12.8px; color: #a00; line-height: 1em;">Le quartier du parc Aimé Césaire. Vue panoramique 360°. Cliquer sur le lien en haut à gauche pour accéder à Google Maps. (Cette application vous permet d'effectuer une visite virtuelle panoramique de divers lieux de la Martinique, de Trinidad et d'ailleurs...).</div>
 <br>
 <p>Dans le cadre magique et symbolique du Parc Aimé Césaire, l’Agence Canopy Event &amp; Design souhaite plonger les participants dans l’ambiance du pays à l’aide de procédés immersifs innovants, tels que le mapping vidéo, le son, la lumière et d’autres éléments sensoriels qui <b>feront vivre aux participants une expérience unique</b>.</p><br>
 <p>C'est l'ensemble du parc qui sera consacré à cet événement avec des espaces dédiés aux animations et aux expositions, sous des infrastructures éphémères, répartis selon la projection suivante&nbsp;:</p>
@@ -1126,8 +1180,7 @@ animée dans sa capitale moderne, Port of Spain. Tobago, à deux heures de Trini
 </p><br>
 <p>Le pays est l'un des plus prospères des Caraïbes, en grande partie grâce à la production et au traitement du pétrole et du gaz naturel.</p>
 <p>&nbsp;</p>
-<p><b>Durant quatre jours, tous les atouts de l’île seront mis en scène sur le village. Trois thématiques
-principales seront abordées à travers les tables rondes, les conférences, les animations culturelles et la gastronomie.</b></p>
+<p><b>Durant quatre jours, les diverses richesses de l'île seront mises en avant au sein du village. Trois thèmes principaux seront explorés à travers des tables rondes, des conférences, des animations culturelles et des expériences gastronomiques.</b></p>
 <ul class="coche">
 <li><b>1&nbsp;Économie</b>
 <ul class="disc">
@@ -1273,8 +1326,14 @@ title="YouTube video player"></iframe>
 <p>&nbsp;</p>
 <br>
 <hr class="point" style="width: 60%;"><br>
-<p>&nbsp;</p>
-<p>1&nbsp;ÉCONOMIE</p>
+<div class="center">
+<span class="rondrouge-small">
+«&nbsp;Village de Pays&nbsp;»&nbsp;: Édition N°1
+</span>
+</div>
+<!-- <a class="ancre" id="ref-01-07-01"></a> 
+<p>&nbsp;</p> 
+<p>1&nbsp;ÉCONOMIE</p> -->
 <a class="ancre" id="ref-01-07-01"></a>
 <h3 class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent
 martiniquais</h3>
@@ -1503,7 +1562,8 @@ Via les supports de communication et les espaces physiques de nos partenaires Pu
 </li>
 </ul>
 <br>
-<div class="rondrouge">
+<div class="rondrouge" style="background-image: url('images-projet-village/blob_adbf51db2.png');
+background-size: cover; background-position: center;font-weight: bold;">
 <p>Tables rondes / conférences</p><br>
 <p>Animations /jeux</p><br>
 <p>Expo. vente /restauration</p><br>
@@ -1597,6 +1657,10 @@ la gastronomie du «&nbsp;Pays reçu&nbsp;»</b></li>
 <li><b>Mettre votre structure et vos actions en lumière sans avoir a supporter l’ingénierie et l’investissement financier seul, tout en soutenant un projet d’intérêt général.</b></li>
 </ol><br>
 <p><i><b>Posons «&nbsp;ensemble les fondations d’une nouvelle espérance. Celle d’un universel poreux à toutes les cultures et à toutes les différences&nbsp;», si cher à Césaire.</b></i></p><br>
+<div class="center">
+<div class="image11"><img src="images-projet-village/Fondation-Aime-Cesaire.webp" width="454" height="374" alt="La fondation Aimé Césaire">La fondation Aimé Césaire - Ville de Fort de France</div>
+</div>
+<br>
 <p>Le projet «&nbsp;Village de Pays/Village Martinique&nbsp;», est par son essence même en écho avec les valeurs que portent la Fondation Aimé Césaire (FAC) qui a pour vocation la connaissance et le rayonnement dans les Caraïbes, aux Amériques, en Afrique et dans le monde, des valeurs fondatrices de la pensée d’Aimé Césaire au travers d’actions culturelles, éducatives, artistiques et toutes formes d’initiatives pédagogiques.</p><br>
 <p>«&nbsp;Village de Pays/Village Martinique&nbsp;» reposant sur des valeurs humaines fortes de partage,
 d’échanges et connaissance de l’autre vous propose une <b>belle mise en lumière de la Fondation Aimé Césaire</b><i> <b>et l’opportunité de poursuivre vos objectifs de promotion, de diffusion et de vulgarisation de la pensée et des valeurs du poète, dramaturge, essayiste et militant pour la dignité humaine, pour la défense des valeurs inaliénables de liberté, d’égalité, de fraternité, de justice, de respect, patrimoine commun de tous les peuples.</b></i></p>
@@ -1611,7 +1675,11 @@ Les compétences et la diversité ne manquent pas au Sermac, les talents pourrai
 </li>
 </ul>
 <br>
-<hr class="point"><br>
+<div class="image12">
+<img src="images-projet-village/Cesaire-cartoon.jpg" width="415" height="415" alt="Aimé Césaire cartoonisé" style="border: solid 1px #a00; border-radius: 400px">
+Aimé Césaire par <a href="https://c-lestdesign.com/" target="_blank">Cédric Demiaude</a>
+</div>
+<br><hr class="point"><br>
 <a class="ancre" id="ref-01-14-00"></a>
 <h2 class="manus">Opportunités pour la Chambre de Métiers et de l'Artisanat</h2>
 <ol>
