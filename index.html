@@ -14,762 +14,163 @@ href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQAAAAA3iMLMAAAACXBI
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
 <style>
-html,body,div,h1,h2,h3,h4,p {
-margin: 0;
-padding: 0;
-border: 0;
-font: inherit;
-vertical-align: baseline;
-font-size: 100%;
-line-height: 140%
+/* variables polices et couleurs */
+:root {
+  --marron: #400;
+  --marron2: #500;
+  --rouge: #a00;
+  --gris1: #eee;
+  --gris2: #888;
+  --gris3: #333;
+  --gris4: #f5f5f5;
+  --gris5: #ddd;
+  --gris6: #666;
+  --noir: #000;
+  --blanc: #fff;
+  --turquoise: #0ff;
+  --jaune: #ff0;
+  --rose: #fef;
+  --orange: #ed9;
+  --rose_transpa: rgba(255, 238, 255, 0.9);
+  --police1: "Playfair Display", serif;
+  --police2: "Roboto", sans-serif;
 }
-body {
-font-size: 1em;
-font-family: "Roboto", Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif;
-background-color: #eee;
-color: #000;
-font-weight: 300;
-text-align: left
-}
-.page {
-max-width: 1024px;
-padding: 3.05%;
-margin: 0 auto;
-background-color: #fff;
-color: #000;
-font-size: 1.2em;
-position: relative;
-font-weight: 300;
-}
-
-
-.roboto {
-font-family: "Roboto", sans-serif;
-/* font-optical-sizing: auto; */
-font-weight: 300;
-font-style: normal;
-font-variation-settings:
-"wdth" 100;
-}
-
-.playfair-display {
-font-family: "Playfair Display", serif;
-/* font-optical-sizing: auto; */
-font-weight: 900;
-font-style: normal;
-}
-
-h1,h2,h3,h4 {
-font-family: inherit;
-font-weight: bold;
-}
-
-h1 {
-color: #400;
-font-size: 2em;
-margin: 2em 0;
-}
-
-h2,
-.h2 {
-color: #400;
-font-size: 1.7em;
-margin: 1em 0;
-}
-h3,
-.h3 {
-color: #400;
-font-size: 1.4em;
-margin: 1em 0;
-}
-h4,
-.h4 {
-color: #400;
-font-size: 1.1em;
-margin: 1em 0;
-font-weight: bold;
-}
-
-b {
-font-size: 110%;
-font-weight: 600;
-}
-
-.exergue {
-padding: 20px 5px;
-color: rgb(255, 255, 255);
-background-color: rgb(85, 0, 0);
-text-decoration: none;
-margin: 0;
-text-align: center;
-font-size: 350%
-}
-a:link,
-a:visited {
-color: rgb(0, 102, 136);
-font-weight: bold;
-text-decoration: none;
-overflow-wrap: break-word;
-padding: 1px 5px;
-border-radius: 3px;
-}
-a:hover,
-a:active,
-a:focus,
-a:hover span.surlign,
-a:active span.surlign,
-a:focus span.surlign
-{
-color: rgb(255, 255, 255);
-background-color: rgb(51, 51, 51);
-/* padding: 1px 5px;
-border-radius: 3px; */
-}
-.tpetit {
-font-size: 12.8px;
-line-height: normal;
-}
-.surlign {
-/*background-color: #ff0;*/
-background-color: rgb(255,255,0,0.8);
-transition: background-color 1s ease;
-padding: 1px 5px;
-margin: 0 3px;
-border-radius: 3px 3px 3px 3px;
-box-shadow: 1px 1px 1px #ddd;
-text-decoration: none;
-line-height: 160%;
-}
-.surlign2 {
-background-color: #0ff;
-padding: 1px 5px;
-margin: 0 3px;
-border-radius: 3px 3px 3px 3px;
-box-shadow: 1px 1px 1px #ddd;
-text-decoration: none;
-line-height: 160%;
-border-radius: 0.5em;
-font-size: 1.1em;
-}
-/*.surlign3 {
-background-color: #0ff;
-padding: 4px;
-margin: 0 3px;
-text-decoration: none;
-line-height: 120%;
-border-radius: 0.3em;
-}
-*/
+html {scroll-behavior: smooth;} /* effet de défilement régulier au document */
+html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%;,line-height: 140%}
+body {font-size: 1em; font-family: var(--police2), Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif; background-color: var(--gris1); color: var(--noir); font-weight: 300; text-align: left;}
+.page {max-width: 1024px; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; font-weight: 300;}
+.roboto {font-family: "Roboto", sans-serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
+.playfair-display {font-family: "Playfair Display", serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal;}
+h1,h2,h3,h4 {font-family: inherit; font-weight: bold;}
+h1 {color: var(--marron); font-size: 2em; margin: 2em 0;}
+h2, .h2 {color: var(--marron); font-size: 1.7em; margin: 1em 0;}
+h3, .h3 {color: var(--marron); font-size: 1.4em; margin: 1em 0;}
+h4, .h4 {color: var(--marron); font-size: 1.1em; margin: 1em 0; font-weight: bold;}
+b {font-size: 110%; font-weight: 600;}
+.exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}
+a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 5px; border-radius: 3px;}
+a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign {color: var(--blanc); background-color: var(--gris3); /* padding: 1px 5px; border-radius: 5px; */}
+.tpetit {font-size: 12.8px; line-height: normal;}
+.surlign {/*background-color: var(--jaune);*/ background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
+.surlign2 {background-color: var(--turquoise); padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%; font-size: 1.1em;}
+/* .surlign3 {background-color: var(--turquoise);padding: 4px;margin: 0 3px;text-decoration: none;line-height: 120%; border-radius: 5px;} */
+/* .surlign4 {background-color: var(--rose); padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;border-radius: 5px; font-size: 1.1em;} */
+.surlign5 {background-color: var(--orange); padding: 1px 5px; margin: 0 3px; box-shadow: 1px 1px 1px #ddd; text-decoration: none;
+line-height: 160%; border-radius: 5px; font-size: 1em;}
+.surlign6 {background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px;
+border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
+a[target="_blank"]:after {content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E); margin: 0 3px 0 1px}
+strong {font-weight: 900; font-size: 110%;}
+.centre {text-align: center;}
+img {border: none; width: 100%; height: auto}
+.image01 {max-width: 1200px; max-height: 797px;} 
+.image02 {max-width: 1024px; max-height: 720px;} 
+.image03 {max-width: 480px; /* max-height:480px; */color: var(--blanc); display: block; font-size: 0.9em; position: relative; top: 0; left: 0;}
+.image04 {max-width: 454px; max-height: 400px;}
+.image05 {max-width: 350px; max-height: 1024px; margin: 0 0 1em 1em;}
+.image06{max-width: 300px; max-height: 340px; margin: 1em auto; }
+.image07 {max-width: 292px; max-height: 1040px; margin: 0 0 1em 1em;}
+.image08 {max-width: 128px; max-height: 106px; margin: 0; }
+.logo {max-width: 300px; max-height: 100px; margin: 0 1em 0 0; /*float: left;*/}
+.logo img {width: 80%;}
+.image01, .image02, .image04, .image05, .image06, .image07, .image08, .logo {color: var(--rouge); display: block; font-size: 12.8px;}
+.image01, .image02, .image03, .image04 {margin: 0 auto;}
+.image04, .image06, .image08 {text-align: center;}
+.image05, .image07 {float: right;}
+.point {height: 0; border: 3px dotted var(--rouge); border-bottom: 0; border-right: 0; border-left: 0; margin: 0 auto; background-color: transparent;}
+/* .icone {max-width: 48px; max-height: 62px; font-size: 150%; margin: 0; font-weight: bold; vertical-align: middle;} */
+blockquote {background: var(--gris4); border-left: 10px solid var(--marron); margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C" "\201D";}
+blockquote:before {color: var(--marron); content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;}
+.allsmall {font-variant-caps: all-small-caps;}
+.manus {text-align: center; font-family: var(--police1), serif; /* font-optical-sizing: auto; */ font-style: normal;color: var(--rouge);}
+.coche {list-style: none; margin-left: 2em; padding-left: 1em;}
+.coche li {margin-bottom: 0.5em; margin-top: 0.5em;}
+.coche li::before {display: inline-block; content: "✅"; width: 1.5em; margin-left: -1.5em;}
 /*
-.surlign4 {
-background-color: #fef;
-padding: 1px 5px;
-margin: 0 3px;
-border-radius: 3px 3px 3px 3px;
-box-shadow: 1px 1px 1px #ddd;
-text-decoration: none;
-line-height: 160%;
-border-radius: 0.5em;
-font-size: 1.1em;
-}
-*/
-.surlign5 {
-background-color: #ed9;
-padding: 1px 5px;
-margin: 0 3px;
-box-shadow: 1px 1px 1px #ddd;
-text-decoration: none;
-line-height: 160%;
-border-radius: 0.5em;
-font-size: 1em;
-}
-.surlign6 {
-background-color: rgb(255,255,0,0.8);
-transition: background-color 1s ease;
-padding: 1px 5px;
-margin: 0 3px;
-border-radius: 3px 3px 3px 3px;
-box-shadow: 1px 1px 1px #ddd;
-text-decoration: none;
-line-height: 160%;
-}
+.coche li {margin-bottom: 0.5em; padding-left: 1.5em;  list-style: none; position: relative;}
+.coche li::before {content: "✔️"; position: absolute; left: 0; color:var(--rouge, #a00);}
+*/ 
+/* ✔️ Icône check personnalisable */
+.disc {list-style: none; margin-left: 2em; padding-left: 1em;}
+.disc li {margin-bottom: 0.2em; margin-top: 0.2em; line-height: 120%; font-size: 0.9em;}
+.disc li::before {display: inline-block; content: "•"; width: 1em; margin-left: -1em; color: var(--rouge);}
+ol {list-style-type: decimal;}
+.cartouche {max-width: 480px; margin: 0.5em auto; padding: 0.5em; background-color: var(--rose_transpa); color: var(--gris3);  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius: 0.5em; text-align: center; box-sizing: border-box; overflow: auto; hyphens: auto;}
+.medallion {display: block; text-align: center; margin: 0 auto; font-weight: bold; background-color: var(--marron); border-radius: 1em;}
+.medallion img {border-radius: 50%; margin-bottom: -1em;}
 
-a[target="_blank"]:after {
-content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E);
-margin: 0 3px 0 1px
-}
-strong {
-font-weight: 900;
-font-size: 110%;
-}
-img {
-border: none;
-width: 100%;
-height: auto
-}
-.image1 {
-max-width: 480px;
-/*max-height:480px
-;*/
-color: #fff;
-margin: 0 auto;
-display: block;
-font-size: 0.9em;
-position: relative;
-top: 0;
-left: 0;
-}
-
-.image2 {
-max-width: 292px;
-max-height: 1040px;
-color: #a00;
-display: block;
-font-size: 12.8px;
-float: right;
-margin: 0 0 1em 1em;
-}
-
-.image3 {
-max-width: 1024px;
-max-height: 720px;
-display: block;
-color: #a00;
-margin: 0 auto;
-font-size: 12.8px;
-}/*parc Aimé Césaire*/
-
-.image4 {
-max-width: 128px;
-max-height: 106px;
-color: #a00;
-/*margin: 0 auto;*/
-display: block;
-font-size: 12.8px;
-margin: 0;
-text-align: center;
-}/*drapeau de Trinidad*/
-
-.image5 {
-max-width: 350px;
-max-height: 797px;
-color: #a00;
-display: block;
-font-size: 12.8px;
-margin: 0 0 1em 1em;
-float: right;
-}/*banque de gènes cacao*/
-
-.image5b {
-max-width: 1200px;
-max-height: 797px;
-color: #a00;
-display: block;
-font-size: 12.8px;
-margin: 0 auto;
-}
-/*banque de gènes cacao grand*/
-
-.image6 {
-max-width: 128px;
-max-height: 106px;
-color: #a00;
-/* margin: 0 auto; */
-display: block;
-font-size: 12.8px;
-margin: 0;
-text-align: center;
-} /*drapeau de la Martinique */
-
-.image7 {
-max-width: 350px;
-max-height: 1024px;
-color: #a00;
-display: block;
-float: right;
-margin: 0 0 1em 1em;
-font-size: 12.8px;
-} /* bière Kalinago */
-
-.image7b {
-max-width: 1024px;
-max-height: 685px;
-color: #a00;
-margin: 0 auto;
-display: block;
-font-size: 12.8px;
-}/*bière Kalinago grand*/
-
-.image8 {
-max-width: 350px;
-max-height: 1024px;
-color: #a00;
-display: block;
-float: right;
-margin: 0 0 1em 1em;
-font-size: 12.8px;
-}
-/* bird sanctuary */
-
-.image8b {
-max-width: 1024px;
-max-height: 685px;
-color: #a00;
-display: block;
-margin: 0 auto;
-font-size: 12.8px;
-}
-/*bird sanctuary grand*/
-
-.image9 {
-max-width: 350px;
-max-height: 1024px;
-color: #a00;
-display: block;
-float: right;
-margin: 0 0 1em 1em;
-font-size: 12.8px;
-} /* paramin et la cascade de Maracas */
-
-.image9b {
-max-width: 350px;
-max-height: 1024px;
-color: #a00;
-display: block;
-margin: 0 auto;
-font-size: 12.8px;
-} /* paramin et la cascade de Maracas grand */
-
-.image10 {
-max-width: 1280px;
-max-height: 720px;
-color: #a00;
-display: block;
-margin: 0 auto;
-font-size: 12.8px;
-} /* under canopy event */
-
-.image11 {
-max-width: 454px;
-max-height: 400px;
-color: #a00;
-display: block;
-margin: 0 auto;
-font-size: 12.8px;
-text-align: center;
-} /* Fondation Aimé Césaire */
-
-.image12 {
-max-width: 300px;
-max-height: 340px;
-color: #a00;
-display: block;
-margin: 1em auto;
-font-size: 12.8px;
-text-align: center;
-} /* cartoon Aimé Césaire */
-
-.image13 {
-max-width: 1024px;
-max-height: 700px;
-color: #a00;
-display: block;
-margin: 1em auto;
-font-size: 12.8px;
-text-align: center;
-} /* carte de la Caricom */
-
-.logo {
-max-width: 300px;
-max-height: 100px;
-font-size: 12.8px;
-color: #a00;
-margin: 0 1em 0 0;
-/*float: left;*/
-}
-
-.logo img {
-width: 80%;
-}
-.point {
-height: 0;
-border: 3px dotted #a00;
-border-bottom: 0;
-border-right: 0;
-border-left: 0;
-margin: 0 auto;
-background-color: transparent;
-}
-.icone {
-max-width: 48px;
-max-height: 62px;
-font-size: 150%;
-margin: 0;
-font-weight: bold;
-vertical-align: middle;
-}
-blockquote {
-background: #f5f5f5;
-border-left: 10px solid #888;
-margin: 1.5em 10px;
-padding: 0.5em 10px;
-quotes: "\201C" "\201D";
-}
-blockquote:before {
-color: #888;
-content: open-quote;
-font-size: 4em;
-line-height: 0.1em;
-margin-right: 0.25em;
-vertical-align: -0.4em;
-}
-.allsmall {
-font-variant-caps: all-small-caps;
-}
-.manus {
-text-align: center;
-font-family: "Playfair Display", serif;
-/* font-optical-sizing: auto; */
-font-style: normal;
-color: #a00;
-}
-.coche {
-list-style: none;
-margin-left: 2em;
-padding-left: 1em;
-}
-.coche li {
-margin-bottom: 0.5em;
-margin-top: 0.5em;
-}
-.coche li::before {
-display: inline-block;
-content: "✅";
-width: 1.5em;
-margin-left: -1.5em;
-}
-.disc {
-list-style: none;
-margin-left: 2em;
-padding-left: 1em;
-}
-.disc li {
-margin-bottom: 0.2em;
-margin-top: 0.2em;
-line-height: 120%;
-font-size: 0.9em;
-}
-.disc li::before {
-display: inline-block;
-content: "•";
-width: 1em;
-margin-left: -1em;
-color: #a00;
-}
-ol {
-list-style-type: decimal;
-}
-.cartouche {
-max-width: 480px;
-margin: 0.5em auto;
-padding: 0.5em;
-background-color: #dedede;
-color: #333;
-line-height: 1.4em;
-text-align: center;
-box-shadow: 1px 1px 1px #888;
-font-size: 1.1em;
-border-radius: 0.5em;
-box-sizing: border-box;
-word-break: break-all;
-overflow: auto;
-}
-.medallion {
-display: block;
-text-align: center;
-margin: 0 auto;
-font-weight: bold;
-background-color: #222;
-border-radius: 1em;
-}
-.medallion>img {
-border-radius: 30em;
-margin-bottom: -1em;
-}
 @media screen and (max-width: 768px) {
-.center {
-display: flex;
-width: 100%;
-align-items: center;
-justify-content: center;
-font-size: 1em;
+.center {display: flex; width: 100%; align-items: center; justify-content: center; font-size: 1em;}
+.rondrouge-small {padding: .4em; margin-top: .4em; font-size: 1em;}
 }
-.rondrouge-small {
-padding: .4em;
-margin: 0 auto;
-margin-top: .4em;
-font-size: 1em;
-}
-}
-
-.rondrouge {
-max-width: 20em;
-max-height: 20em;
-border: solid 2px #a00;
-border-radius: 2em;
-padding: 1em;
-text-align: center;
-margin: 0 auto;
-font-variant-caps: all-small-caps;
-line-height: 1.2em;
-box-sizing: border-box;
-word-break: break-all;
-}
-.rondrouge-small {
-display: inline-block;
-max-height: 20em;
-border: solid 2px #a00;
-border-radius: 2em;
-padding: 1em;
-text-align: center;
-margin: 0 auto;
-margin-top: .1em;
-font-variant-caps: all-small-caps;
-line-height: 1.2em;
-box-sizing: border-box;
-word-break: break-all;
-}
-
-.clearfix {
-clear: both;
-}
-.lateral {
-max-width: 26em;
-background-color: rgb(255,238,255,0.6);
-padding: 1px 5px;
-margin: 0 3px;
-text-decoration: none;
-line-height: 120%;
-border-radius: 0.5em;
-font-size: 1em;
-font-variant-caps: normal;
-}
-.rouge {
-color: #a00;
-}
-table,th,td {
-border: solid 1px #7CA0B5;
-border-collapse: collapse;
-border-spacing: 0;
-overflow-wrap: break-word;
-}
-table {
-margin: 0 auto;
-font-size: 1em;
-max-width: 900px;
-}
-td {
-padding: 0 5px;
-margin: 0;
-}
-th {
-background-color: #500;
-color: #fff;
-text-align: center;
-font-size: 1.2em;
-}
-.droite {
-text-align: right
-}
-.decalhaut {
-margin-top: -0.5em;
-}
-.ampli1 {
-font-size: 1.2em;
-font-weight: bold;
-}
-.conteneur1 {
-max-width: 640px;
-margin: 0 auto;
-/*vidéo centrée*/
-}
-.conteneur2 {
-position: relative;
-line-height: normal;
-width: 100%;
-height: 0;
-padding-bottom: 56.25%;
-/*vidéo 16:9*/
-}
-.conteneur2b {
-position: relative;
-line-height: normal;
-width: 100%;
-height: 0;
-margin:0 auto;
-color: #a00;
-font-size: 85%;
-padding-bottom: 56.25%;
-/*vidéo 16:9*/
-}
-iframe,video {
-position: absolute;
-width: 100%;
-height: 100%;
-left: 0;
-top: 0;
-}
+.rondrouge, .rondrouge-small {max-height: 20em; margin: 0 auto; text-align: center; border: solid 2px var(--rouge); border-radius: 2em; font-variant-caps: all-small-caps; box-sizing: border-box; word-break: break-all; line-height: 1.2em;padding: 1em;}
+.rondrouge {max-width: 20em;}
+.rondrouge-small {display: inline-block; margin-top: .1em;}
+.clearfix {clear: both;}
+.lateral {max-width: 26em; background-color: rgb(255,238,255,0.6); padding: 1px 5px; margin: 0 3px; text-decoration: none; line-height: 120%; border-radius: 0.5em; font-size: 1em; font-variant-caps: normal;}
+.rouge {color: var(--rouge);}
+table,th,td {border: solid 1px #7CA0B5; border-collapse: collapse;
+border-spacing: 0; overflow-wrap: break-word;}
+table {margin: 0 auto; font-size: 1em; max-width: 1024px;}
+td {padding: 0 5px; margin: 0;}
+th {background-color: var(--marron); color: var(--blanc); text-align: center; font-size: 1.2em;}
+tr:hover {background-color: var(--gris5);}
+tr:nth-child(even) {background-color: var(--gris4);}
+.droite {text-align: right}
+.decalhaut {margin-top: -0.5em;}
+.ampli1 {font-size: 1.2em; font-weight: bold;}
+.conteneur1 {max-width: 640px; margin: 0 auto; /*vidéo centrée*/}
+.conteneur2 {position: relative; line-height: normal; width: 100%; height: 0; padding-bottom: 56.25%; /*vidéo 16:9*/}
+.conteneur2b {position: relative; line-height: normal; width: 100%; height: 0; margin:0 auto; color: var(--rouge); font-size: 85%; padding-bottom: 56.25%; /*vidéo 16:9*/}
+iframe,video {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 /* Bouton pour ouvrir la popup - Grok3 */
-.bouton-toc {
-display: block;
-text-align: center;
-position: sticky;
-/*top: 20px;*/
-top: -10px;
-left: 0;
-font-size: 1.5em;
-z-index: 1000;
+.bouton-toc {display: block; text-align: center; position: sticky; /*top: 20px;*/ top: -10px; left: 0; font-size: 1.5em; z-index: 1000; padding: 10px 20px; border-radius: 5px; margin-top: -60px; margin-bottom: 0;}
 /* background-color: #1abc9c; */ /* Turquoise */
-padding: 10px 20px;
-border-radius: 5px;
-margin-top: -60px;
-margin-bottom: 0;
-}
 
 /* Popup */
-.modal {
-visibility: hidden;
-opacity: 0;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0, 0, 0, 0.5); /* Overlay sombre */
-z-index: 1000;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.modal:target {
-visibility: visible;
-opacity: 1;
-transition: opacity 0.3s ease;
-}
+.modal {visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); /* Overlay sombre */ z-index: 1000; display: flex; justify-content: center; align-items: center;}
+.modal:target {visibility: visible; opacity: 1; transition: opacity 0.3s ease;}
+.modal:target .modal_content {transform: scale(1); opacity: 1;}
 /* Contenu de la popup */
-.modal_content {
-padding: 1.5em 2em;
-max-width: 900px;
-width: 90%;
-position: relative;
-}
+.modal_content {padding: 1.5em 2em; max-width: 900px; width: 90%; position: relative;transform: scale(0.9); transition: transform 0.3s ease, opacity 0.3s ease;}
 /* Table des matières */
-.sommaire {
-width: 100%;
-max-height: 80vh; /* Limite la hauteur pour éviter un défilement excessif */
-overflow-y: auto; /* Défilement vertical uniquement si nécessaire */
-padding: 1em;
-background-color: rgba(255, 238, 255, 0.95); /* Fond légèrement plus opaque */
-color: #333;
-line-height: 1.2em;
-text-align: left;
-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-font-size: 1.2em;
-border-radius: 0.5em;
-box-sizing: border-box;
-word-break: break-word;
-hyphens: auto;
-}
-.sommaire h2 {
-font-size: 1.5rem;
-/* color: #2c3e50;*/ /* Bleu nuit */
-margin-bottom: 20px;
-text-align: center;
-}
-.sommaire ol {
-padding-left: 20px;
-}
-.sommaire ol li {
-margin: 8px 0;
-}
-.sommaire ol li a {
-/* color: #1abc9c; *//* Turquoise */
-text-decoration: none;
-transition: color 0.3s;
-}
-.sommaire ol li a:hover,
-.sommaire ol li a:focus {
-/* color: #16a085; *//* Turquoise plus foncé */
-outline: none;
-}
+.sommaire {width: 100%; max-height: 80vh; /* Limite la hauteur pour éviter un défilement excessif */ overflow-y: auto; /* Défilement vertical uniquement si nécessaire */
+padding: 1em; background-color: var(--rose_transpa);
+/* background-color: rgba(255, 238, 255, 0.95); */ /* Fond légèrement plus opaque */ color: var(--gris3); line-height: 1.2em; text-align: left; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); font-size: 1.2em; border-radius: 0.5em; box-sizing: border-box; word-break: break-word; hyphens: auto;}
+.sommaire h2 {font-size: 1.5rem; /* color: #2c3e50;*/ /* Bleu nuit */ margin-bottom: 20px; text-align: center;}
+.sommaire ol {padding-left: 20px;}
+.sommaire ol li {margin: 8px 0;}
+.sommaire ol li a {/* color: #1abc9c; *//* Turquoise */
+text-decoration: none; transition: color 0.3s;}
+.sommaire ol li a:hover, .sommaire ol li a:focus {/* color: #16a085; *//* Turquoise plus foncé */outline: none;}
 /* Bouton de fermeture */
-.modal_close {
-position: absolute;
-/* top: 10px;
-right: 10px;
-color: #666; */
-top: 2rem;
-right: 3rem;
-color: #666;
-font-size: 1.2rem;
-text-decoration: none;
-transition: color 0.3s;
-}
-.modal_close:hover,
-.modal_close:focus {
-color: #333;
-}
+.modal_close {position: absolute; top: 2rem; right: 3rem; color: var(--gris6); font-size: 1.2rem; text-decoration: none; transition: color 0.3s;}
+.modal_close:hover, .modal_close:focus {color: var(--gris3);}
 /* Responsive design */
 @media (max-width: 768px) {
-.bouton-toc {
-font-size: 1.2em;
-padding: 8px 15px;
-}
-.modal_content {
-width: 95%;
-padding: 1em;
-}
-.sommaire {
-font-size: 1em;
-max-height: 90vh;
-}
-.sommaire h2 {
-font-size: 1.3rem;
+.bouton-toc {font-size: 1.2em; padding: 8px 15px;}
+.modal_content {width: 95%; padding: 1em;}
+.sommaire {font-size: 1em; max-height: 90vh;}
+.sommaire h2 {font-size: 1.3rem;}
 }
 
-}
 /* Style du header avec l'image en arrière-plan */
-.hero {
-position: relative;
-height: 50vh; /* Hauteur pleine écran */
-/* background-image: url('fort-de-france.jpg'); */
-background-image: url('Ville-de-Fort-de-France2.jpg');
-background-size: cover;
-background-position: center;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
+.hero {position: relative; height: 50vh; background-image: url('images-projet-village/Ville-de-Fort-de-France2.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: space-between;}
+/* 50 vh Hauteur pleine écran */
 /* Overlay pour améliorer la lisibilité du texte sur l'image */
-.hero::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0); /* Overlay sombre semi-transparent */
-}
-.ancre {
-margin: 0 auto;
-box-sizing: border-box;
-display: block;
-width: 0.1em;
-height:0.1em;
-}
+.hero::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);} 
+/* Overlay sombre semi-transparent */
+
+.ancre {margin: 0 auto; box-sizing: border-box; display: block; width: 0.1em;height:0.1em;}
+.flag {max-width: 40px; max-height: 30px; vertical-align: middle; display: block; margin: 2px auto;}
+table.caricom {width: 100%; table-layout: fixed; font-size: 0.8em;}
+table.caricom td {height: 40px;}
+.footer {display: flex; justify-content: space-between; background-color: var(--gris4); padding: 1em; border-top: 1px solid #ccc;}
+.footer p {margin: 0;}
+.footer .logo img {max-width: 200px;}
+.modal {visibility: hidden;  opacity: 0; transition: visibility 0.3s, opacity 0.3s ease-in-out;}
+.modal:target {visibility: visible; opacity: 1;}
 </style>
 </head>
 <body>
@@ -786,68 +187,6 @@ height:0.1em;
 <!-- Popup -->
 <div class="modal" id="toc" role="dialog" aria-labelledby="sommaire-title">
 <div class="modal_content">
-<!--   <div class="sommaire">
-<h2 id="sommaire-title">Sommaire</h2>
-<ol>
-<li><a href="#ref-01-00-00">Village de Pays/Village Martinique</a>
-<ol>
-<li><a href="#ref-01-01-00">Mise en scène de messages et d’espaces</a></li>
-<li><a href="#ref-01-02-00">La Martinique à la rencontre du monde</a>
-<ol>
-<li><a href="#ref-01-02-01">Les objectifs</a></li>
-<li><a href="#ref-01-02-02">Les axes</a></li>
-<li><a href="#ref-01-02-03">Une plateforme d’échange</a></li>
-<li><a href="#ref-01-02-04">Une vitrine mobile et modulable</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-03-00">Modèle de l’événement principal</a>
-<ol>
-<li><a href="#ref-01-03-01">Un événement bien ciblé sur 4 jours</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-04-00">Les espaces de l’événement principal</a>
-<ol>
-<li><a href="#ref-01-04-01">Le parc Aimé Césaire : un hub mondial</a></li>
-<li><a href="#ref-01-04-02">Dans le parc</a></li>
-<li><a href="#ref-01-04-03">Sous le grand carbet</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-05-00">Trinidad & Tobago</a>
-<ol>
-<li><a href="#ref-01-05-01">Zoom sur l’une des îles les plus prospères de la Caraïbe</a></li>
-<li><a href="#ref-01-06-01">Les attraits pour le pays</a></li>
-<li><a href="#ref-01-06-02">Grands sujets d’intérêt communs</a></li>
-<li><a href="#ref-01-07-01">Le principe : un sujet d’intérêt commun porté par un référent martiniquais</a></li>
-<li><a href="#ref-01-08-01">Parmi les principaux attraits de Trinidad & Tobago</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-09-00">Un plan de communication conséquent</a>
-<ol>
-<li><a href="#ref-01-09-01">Plan média</a></li>
-<li><a href="#ref-01-09-02">Plan hors média</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-10-00">Modèle de l’événement grand public</a>
-<ol>
-<li><a href="#ref-01-10-01">Un événement grand public sur 2 jours</a></li>
-</ol>
-</li>
-<li><a href="#ref-01-11-00">Les espaces de l’événement grand public</a></li>
-<li><a href="#ref-01-12-00">Bénéfices pour les parties prenantes</a>
-<ol>
-<li><a href="#ref-01-12-01">Fort-de-France : animation de la ville et émulation économique</a></li>
-<li><a href="#ref-01-13-00">Fondation Aimé Césaire : valorisation culturelle</a></li>
-<li><a href="#ref-01-14-00">Chambre de Métiers et de l’Artisanat : mise en exergue des artisans</a></li>
-<li><a href="#ref-01-15-00">Chambre de Commerce et d’Industrie (CCIM) : promotion économique</a></li>
-<li><a href="#ref-01-16-00">Comité Martiniquais du Tourisme (CMT) : rayonnement touristique</a></li>
-<li><a href="#ref-01-17-00">Collectivité Territoriale de Martinique : rôle stratégique</a></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<a href="#close" class="modal_close" aria-label="Fermer la popup"><span class="surlign">✖(close)</span></a>
-</div> -->
 <div class="sommaire">
 <h2 id="sommaire-title">Sommaire</h2>
 <ol>
@@ -880,7 +219,7 @@ height:0.1em;
 <li><a href="#ref-01-05-02">Tableau Comparatif : Martinique vs Trinidad & Tobago</a></li>
 <li><a href="#ref-01-06-01">Les attraits pour le pays</a></li>
 <li><a href="#ref-01-06-02">Grands sujets d'intérêt communs</a></li>
-<li><a href="#ref-01-07-01a">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent martiniquais</a></li>
+<li><a href="#ref-01-07-01">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent martiniquais</a></li>
 <li><a href="#ref-01-08-01">Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</a></li>
 </ol>
 </li>
@@ -933,7 +272,7 @@ height:0.1em;
 </div>
 </div>
 </div>
-<p><a href="#haut" class="surlign2" style="position: fixed; z-index: 100; bottom: 20px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
+<p><a href="#haut" class="surlign2 scroll-to-top" style="position: fixed; z-index: 100; bottom: 20px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
 <h1 id="ref-01-00-00" class="exergue">Village de Pays - Village Martinique</h1>
 <main>
 <div class="page">
@@ -944,13 +283,13 @@ height:0.1em;
 🛜&nbsp;<a href="https://www.canopyeventdesign.com" target="_blank">www.canopyeventdesign.com</a><br>
 <span style="font-size: 1em; font-weight: bold;">&#x2709;&nbsp;<a
 href="mailto:contact@canopyeventdesign.com" target="_blank">&nbsp;contact@canopyeventdesign.com</a></span><br><br>
-VOUS PRÉSENTE&nbsp;:<br>
+<!-- VOUS PRÉSENTE&nbsp;:<br> -->
 </p>
-<strong>«&nbsp;Village de Pays&nbsp;»</strong> <br><b>/</b><br> <strong>«&nbsp;Village MARTINIQUE&nbsp;»</strong><br>
+<!-- <strong>«&nbsp;Village de Pays&nbsp;»</strong> <br><b>/</b><br> <strong>«&nbsp;Village MARTINIQUE&nbsp;»</strong><br> -->
 </div>
 <a class="ancre" id="ref-01-01-00">&nbsp;</a>
 <h2 class="manus" style="text-align: center;">Mise en scène de messages et d’espaces</h2>
-<div class="image1">
+<div class="image03">
 <div class="medallion">
 <img src="images-projet-village/Valerie.png" alt="Photo de Valérie Charlery - canopyeventdesign.com">
 <strong style="font-size: 1.4em;">Bonjour&nbsp;!</strong><br>
@@ -979,11 +318,11 @@ créer un espace d'échanges et de découvertes entre la Martinique et d'autres 
 <p>L’expérience sera réciproque, car la Martinique sera à son tour mise en lumière dans chacun des pays
 accueillis grâce au <span class="surlign5">«&nbsp;Village Martinique&nbsp;»</span> qui s’exportera.</p>
 <br>
-<div class="image10"><img src="images-projet-village/under-canopy-event.png" width="640" height="360" alt="under canopy event"></div>
+<div class="image01"><img src="images-projet-village/under-canopy-event.png" width="640" height="360" alt="under canopy event" loading="lazy">Under canopy event</div>
 <a class="ancre" id="ref-01-02-01"></a>
 <h3>Les objectifs</h3>
 <ul class="coche">
-<li><b>Renforcer les liens</b> entre la Martinique et d'autres pays ou régions, en s'enrichissant de leurs
+<li><b>Renforcer les liens&nbsp;</b> entre la Martinique et d'autres pays ou régions, en s'enrichissant de leurs
 savoir-faire et savoir-être et en partageant les nôtres.</li>
 <li><b>Développer la notoriété</b> de la Martinique en favorisant les échanges économiques et culturels avec les
 pays reçus de part et d'autre.</li>
@@ -1010,7 +349,7 @@ Propositions de stages dans de grandes entreprises de part et d'autre, échanges
 <li><strong class="allsmall">Culture</strong><br>
 Exploration de la gastronomie, de la musique, de la danse et de l’artisanat.</li>
 </ol>
-<div class="image2"><img src="images-projet-village/70ec84db2.png" width="292" height="1000" alt="Produits de l'industrie agroalimentaire locale">Produits de l'industrie agroalimentaire locale</div>
+<div class="image07"><img src="images-projet-village/70ec84db2.png" width="292" height="1000" alt="Produits de l'industrie agroalimentaire locale">Produits de l'industrie agroalimentaire locale</div>
 <a class="ancre" id="ref-01-02-03"></a>
 <h3>«&nbsp;Village de Pays&nbsp;»&nbsp: plateforme d'échanges économiques.</h3>
 <p><b>«&nbsp;Village de Pays&nbsp;»</b> permettra à nos compatriotes martiniquais d’aller à la rencontre de cultures différentes, à la découverte de pays ou de régions depuis chez eux, tout en leur donnant envie d’aller plus loin grâce à des offres de séjours alléchantes.</p><br>
@@ -1037,61 +376,7 @@ Exploration de la gastronomie, de la musique, de la danse et de l’artisanat.</
 <a class="ancre" id="ref-01-03-00"></a>
 <h2 class="manus">Village de Pays&nbsp;: Le Modèle</h2>
 <a class="ancre" id="ref-01-03-01"></a>
-<!-- <h3>Un événement bien ciblé sur quatre jours</h3>
-<br>
-<h4 class="allsmall">Jeudi&nbsp;: coopération et économie</h4>
-<ul class="coche">
-<li><b>Public ciblé&nbsp;: acteurs territoriaux et économiques des deux pays.</b>
-<ul class="disc">
-<li><b>Inauguration officielle du village,</b> en présence des Hautes instances martiniquaise et de la
-délégation du pays reçu.</li>
-</ul>
-</li>
-<li><b>Table ronde sous le Grand Carbet.</b>
-<ul class="disc">
-<li>L’objectif sera de poser ou de développer les bases d’une coopération avec le pays mis à l’honneur ou de
-s’instruire de son modèle. Que peut-il nous apporter et vice versa&nbsp;? Une thématique principale sera
-mise en avant en fonction du pays présenté.</li>
-</ul>
-</li>
-<li><b>Cocktail dinatoire dans le parc</b></li>
-</ul>
-<br>
-<h4 class="allsmall">Vendredi&nbsp;: Tourisme et jeunesse</h4>
-<ul class="coche">
-<li><b>Public ciblé le matin&nbsp;: professionnels du tourisme, influenceurs</b>
-<ul class="disc">
-<li>Conférence croisée sur la politique et l’offre touristique du pays et la nôtre. Puis immersion sur les
-espaces du village.</li>
-</ul>
-</li>
-<li><b>Public ciblé l'après-midi&nbsp;: étudiants</b>
-<ul class="disc">
-<li>Offres de formations linguistiques, stages et jobs des deux côtés, solutions d’hébergements croisés.</li>
-</ul>
-</li>
-<li><b>Public ciblé le soir&nbsp;: grand public</b>
-<ul class="disc">
-<li>Ouverture du village avec mot du maire et des partenaires principaux, animations dans le village et
-spectacle sous le dôme.</li>
-</ul>
-</li>
-</ul>
-<br>
-<h4 class="allsmall">Samedi et dimanche&nbsp;: culture et découverte</h4>
-<ul class="coche">
-<li><b>Accueil de tous les publics</b>
-<ul class="disc">
-<li>Découverte des expositions, animations et spectacles dans le parc.</li>
-<li>Ateliers et stands culinaires et autres réjouissances autour du pays accueilli.</li>
-</ul>
-</li>
-<li><b>Offre de séjours touristiques «&nbsp;spécial Village&nbsp;»&nbsp;!</b></li>
-<li><b>Présentation de la composition du «&nbsp;Village Martinique&nbsp;»</b></li>
-</ul> -->
-
-
-<h3>Programme 2025 (Trinidad & Tobago)</h3>
+<h3>Programme détaillé : 4 jours d'événements ciblés.</h3>
 <ul class="coche">
 <li><strong class="allsmall">Jeudi&nbsp;: Tables rondes économiques</strong> (acteurs institutionnels).</li>
 </ul>
@@ -1117,11 +402,11 @@ background-size: cover; background-position: center;font-weight: bold;">
 <h2 class="manus">Les Espaces</h2>
 <a class="ancre" id="ref-01-04-01"></a>
 <h3 class="allsmall">Le parc Aimé Césaire&nbsp;: un hub mondial.</h3>
-<div class="image3"><a href="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg"><img src="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg" width="1024" height="685" alt="Le parc Aimé Césaire, un hub mondial"></a>Le parc Aimé Césaire&nbsp;: vue de l'intérieur. [Cliquer sur l'image pour l'agrandir].<br>
+<div class="image02"><a href="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg"><img src="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg" width="1024" height="685" alt="Le parc Aimé Césaire, un hub mondial"></a>Le parc Aimé Césaire&nbsp;: vue de l'intérieur. [Cliquer sur l'image pour l'agrandir].<br>
 Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DDesktop" target="blank">«&nbsp;Street View dans Google Maps&nbsp;»</a></div><br>
 <div class="conteneur2b" style="display: inline-block;">
-<iframe src="https://www.google.com/maps/embed?pb=!4v1743036383858!6m8!1m7!1sCAoSLEFGMVFpcE9tTVBDa0VyNXAwT2dubFJfRnoyNjEyOVpud1lBcVZJVE1RbWpC!2m2!1d14.60763870037384!2d-61.07216201103901!3f322.70619230260456!4f-0.9103431688163255!5f2.554641168909145" width="600" height="450" style="border:0;"></iframe></div>
-<div style="width: 100%; margin: 0 auto; font-size:12.8px; color: #a00; line-height: 1em;">Le quartier du parc Aimé Césaire. Vue panoramique 360°. Cliquer sur le lien en haut à gauche pour accéder à Google Maps. (Cette application vous permet d'effectuer une visite virtuelle panoramique de divers lieux de la Martinique, de Trinidad et d'ailleurs...).</div>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1743036383858!6m8!1m7!1sCAoSLEFGMVFpcE9tTVBDa0VyNXAwT2dubFJfRnoyNjEyOVpud1lBcVZJVE1RbWpC!2m2!1d14.60763870037384!2d-61.07216201103901!3f322.70619230260456!4f-0.9103431688163255!5f2.554641168909145" width="600" height="450" style="border:0;" loading="lazy"></iframe></div>
+<div style="width: 100%; margin: 0 auto; font-size:12.8px; color: var(--rouge); line-height: 1em;">Le quartier du parc Aimé Césaire. Vue panoramique 360°. Cliquer sur le lien en haut à gauche pour accéder à Google Maps. (Cette application vous permet d'effectuer une visite virtuelle panoramique de divers lieux de la Martinique, de Trinidad et d'ailleurs...).</div>
 <br>
 <p>Dans le cadre magique et symbolique du Parc Aimé Césaire, l’Agence Canopy Event &amp; Design souhaite plonger les participants dans l’ambiance du pays à l’aide de procédés immersifs innovants, tels que le mapping vidéo, le son, la lumière et d’autres éléments sensoriels qui <b>feront vivre aux participants une expérience unique</b>.</p><br>
 <p>C'est l'ensemble du parc qui sera consacré à cet événement avec des espaces dédiés aux animations et aux expositions, sous des infrastructures éphémères, répartis selon la projection suivante&nbsp;:</p>
@@ -1338,8 +623,7 @@ title="YouTube video player"></iframe>
 <p>&nbsp;</p>
 <p>1&nbsp;ÉCONOMIE</p> -->
 <a class="ancre" id="ref-01-07-01"></a>
-<h3 class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent
-martiniquais</h3>
+<h3 class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent martiniquais</h3>
 <h4 class="allsmall">Jeudi 16 octobre 2025</h4>
 <ul class="disc">
 <li><b>Food and drink</b></li>
@@ -1349,9 +633,9 @@ martiniquais</h3>
 <li><b>BTP (matériaux et technique de construction)</b></li>
 <li><b>...</b></li>
 </ul>
-<div class="image4"><img src="images-projet-village/848b984a.png" width="256" height="154" alt="drapeau de Trinidad" style="border-radius: 1em;">Trinidad</div>
+<div class="image08"><img src="images-projet-village/848b984a.png" width="256" height="154" alt="drapeau de Trinidad" style="border-radius: 1em;">Trinidad</div>
 <div class="center">
-<div class="image5">
+<div class="image05">
 <a href="images-projet-village/cocoa-research-station.jpg"><img src="images-projet-village/cocoa-research-station.jpg" width="1200" height="797" alt="station de recherche universitaire sur le cacao"></a>Banque de gènes du Cacao - station de recherche universitaire sur le cacao.<br>
 4,73 ha plantés en 1990<br>
 [Cliquer sur l'image pour l'agrandir.]<br><br>
@@ -1375,9 +659,9 @@ Les plus&nbsp;: Le recyclage et la consigne des bouteilles qui sont réutilisée
 </ul>
 </div>
 <br>
-<div class="image6"><img src="images-projet-village/91b53b4.png" width="256" height="171" alt="Drapeau de la Martinique" style="border-radius: 1em;">Martinique</div>
+<div class="image08"><img src="images-projet-village/91b53b4.png" width="256" height="171" alt="Drapeau de la Martinique" style="border-radius: 1em;">Martinique</div>
 <div class="center">
-<div class="image7">
+<div class="image05">
 <a href="images-projet-village/la-kalinago.webp"><img src="images-projet-village/la-kalinago.webp" width="350" height="530" alt="La Kalinago, une bière martiniquaise à base de manioc"></a>La Kalinago, une bière martiniquaise à base de manioc<br>
 [Cliquer sur l'image pour l'agrandir.]<br><br>
 </div>
@@ -1400,7 +684,7 @@ une bière artisanale à base de manioc fabriquée en Martinique</li>
 <a class="ancre" id="ref-01-08-01"></a>
 <h3>Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</h3><br>
 <div class="center">
-<div class="image7">
+<div class="image05">
 <a href="images-projet-village/Caroni-Bird-Sanctuary.jpg"><img src="images-projet-village/Caroni-Bird-Sanctuary.jpg" width="1024" height="685"
 alt="Cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique de Trinidad"></a>Caroni Bird Sanctuary&nbsp;: cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique
 de Trinidad"<br>
@@ -1665,7 +949,7 @@ la gastronomie du «&nbsp;Pays reçu&nbsp;»</li>
 </ol><br>
 <p><i><b>Posons «&nbsp;ensemble les fondations d’une nouvelle espérance. Celle d’un universel poreux à toutes les cultures et à toutes les différences&nbsp;», si cher à Césaire.</b></i></p><br>
 <div class="center">
-<div class="image11"><img src="images-projet-village/Fondation-Aime-Cesaire.webp" width="454" height="374" alt="La fondation Aimé Césaire">La fondation Aimé Césaire - Ville de Fort de France</div>
+<div class="image04"><img src="images-projet-village/Fondation-Aime-Cesaire.webp" width="454" height="374" alt="La fondation Aimé Césaire">La fondation Aimé Césaire - Ville de Fort de France</div>
 </div>
 <br>
 <p>Le projet «&nbsp;Village de Pays/Village Martinique&nbsp;», est par son essence même en écho avec les valeurs que portent la Fondation Aimé Césaire (FAC) qui a pour vocation la connaissance et le rayonnement dans les Caraïbes, aux Amériques, en Afrique et dans le monde, des valeurs fondatrices de la pensée d’Aimé Césaire au travers d’actions culturelles, éducatives, artistiques et toutes formes d’initiatives pédagogiques.</p><br>
@@ -1682,8 +966,8 @@ Les compétences et la diversité ne manquent pas au Sermac, les talents pourrai
 </li>
 </ul>
 <br>
-<div class="image12">
-<img src="images-projet-village/Cesaire-cartoon.jpg" width="415" height="415" alt="Aimé Césaire cartoonisé" style="border: solid 1px #a00; border-radius: 400px">
+<div class="image06">
+<img src="images-projet-village/Cesaire-cartoon.jpg" width="415" height="415" alt="Aimé Césaire cartoonisé" style="border: solid 1px var(--rouge); border-radius: 400px">
 Aimé Césaire par <a href="https://c-lestdesign.com/" target="_blank">Cédric Demiaude</a>
 </div>
 <br><hr class="point"><br>
@@ -1749,7 +1033,7 @@ L’occasion supplémentaire de mettre en avant votre <b>«&nbsp;Label Qualité 
 </ul>
 <h4>En matière de formations avec&nbsp;:</h4>
 <p><b>Une sélection des meilleurs apprentis qui sera effectuée au sein des centres de formations dont vous avez la gestion, Skillfor Campus, l’École de gestion et de commerce et le Centre de formation des apprentis afin qu’ils participent à cette expérience enrichissante.</b></p><br>
-<div class="image2"><img src="images-projet-village/produits-du-terroir-(1).png" width="640" height="625"
+<div class="image07"><img src="images-projet-village/produits-du-terroir-(1).png" width="640" height="625"
 alt="produits de l'industrie agroalimentaire locale">Martinique&nbsp;: produits de l'industrie agroalimentaire locale</div>
 <ul class="coche">
 <li>Partenariat avec l’EGC afin de proposer aux apprenants, une expérience internationale bilatérale et enrichissante.
@@ -1829,7 +1113,7 @@ title="YouTube video player"></iframe>
 <li><b>Participation du Conseil des jeunes Citoyens.</b></li>
 </ul>
 </li>
-<li><b>En matière d’intégration régionale et de diplomatie territoriale</b>
+<li><b>En matière d’<span class="surlign">intégration régionale et de diplomatie territoriale.</span></b>
 <ul class="disc">
 <li>«&nbsp;Village de Pays/Village Martinique&nbsp;» est un événement d’envergure qui s’accorde complètement avec la <b>«&nbsp;volonté d’intégration, régionale, verticale et horizontale </b>, bien affirmée&nbsp;» de la CTM afin de <b>«&nbsp;nous permettre de créer les conditions de relations commerciales, économiques et culturelles, en profitant de notre position géostratégique, entre trois continents, les Amériques, l’Europe et demain l’Afrique&nbsp;».</b></li>
 <li>Marquer à travers cet événement, <b>l’entrée de la Martinique dans la CARICOM.</b><br>
@@ -1839,19 +1123,213 @@ title="YouTube video player"></iframe>
 </li>
 </ul>
 <br>
-<div class="image13">
-<img src="images-projet-village/Caricom_Member_states_2025.jpg" width="1280" height="766" alt="carte de la CARICOM">
-<p><b>Carte des pays membres de la Caricom - (Wikimedia).</b></p>
-<p><span style="color: #2D5F2C; background-color:#2D5F2C; font-size:16px;">☐</span>&nbsp;Membres à part entière</p>
-<p><span style="color: #66C804;background-color:#66C804; font-size:16px;">☐</span>&nbsp;Membres associés</p>
-<p><span style="color: #C2C572;background-color:#C2C572; font-size:16px;">☐</span>&nbsp;Membres observateurs</p> 
-</div>
-<br>
+<h4 class="centre">Carte des pays membres de la Caricom - (Wikimedia).</h4>
+<div class="image02">
+<img src="images-projet-village/Caricom_Member_states_2025.jpg" width="1280" height="766" alt="carte de la CARICOM"></div>
+
+<p style="font-size: 16px; color:#a00; margin-top: -20px;
+margin-bottom: 5em;"><span style="color: #2D5F2C; background-color:#2D5F2C;">☐</span>
+&nbsp;<span style="font-size:12.86px;">Membres à part entière</span><br>
+<span style="color: #66C804;background-color:#66C804;">☐</span>
+&nbsp;<span style="font-size:12.86px;">Membres associés</span><br>
+<span style="color: #C2C572;background-color:#C2C572;">☐</span>
+&nbsp;<span style="font-size:12.86px;">Membres observateurs</span></p> 
+<h4 class="centre">Tableau détaillé des pays membres de la Caricom</h4>
+<table class="caricom">
+<thead>
+<tr>
+<th style="width: 10%">Statut</th>
+<th style="width: 12%">Drapeau</th>
+<th style="width: 30%">Nom</th>
+<th style="width: 14%">Date d'entrée</th>
+<th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="15"><b>Membres<br> à part <br>entière</b></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Flag_of_Antigua_and_Barbuda.svg/250px-Flag_of_Antigua_and_Barbuda.svg.png" id="Image1" class="flag" alt="drapeau" width="250" height="137"></td>
+<td><a href="https://en.wikipedia.org/wiki/Antigua_and_Barbuda" target="_blank">Antigua et Barbuda</a></td>
+<td><p style="text-align: right;">4 juillet 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/9/93/20241013003514%21Flag_of_the_Bahamas.svg/120px-Flag_of_the_Bahamas.svg.png" id="Image2" class="flag" alt="drapeau" width="120" height="60"></td>
+<td><a href="https://en.wikipedia.org/wiki/The_Bahamas" target="_blank">Les Bahamas</a></td>
+<td><p style="text-align: right;">4 juillet 1983</td>
+<td>&nbsp;Ne fait pas partie de l'union douanière</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/250px-Flag_of_Barbados.svg.png" id="Image3" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Barbados" target="_blank">Barbade</a></td>
+<td><p style="text-align: right;">1 août 1973</td><td>&nbsp;L'un des quatre membres fondateurs</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Flag_of_Belize.svg/125px-Flag_of_Belize.svg.png" id="Image4" class="flag" alt="drapeau" width="125" height="75"></td>
+<td><a href="https://en.wikipedia.org/wiki/Belize" target="_blank">Bélize</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Dominica.svg/250px-Flag_of_Dominica.svg.png" id="Image5" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Dominica" target="_blank">Dominique</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Grenada.svg/250px-Flag_of_Grenada.svg.png" id="Image6" class="flag" alt="drapeau" width="250" height="150"></td>
+<td><a href="https://en.wikipedia.org/wiki/Grenada" target="_blank">Grenade</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_Guyana.svg/250px-Flag_of_Guyana.svg.png" id="Image7" class="flag" alt="drapeau" width="250" height="150"></td>
+<td><a href="https://en.wikipedia.org/wiki/Guyana" target="_blank">Guyana</a></td>
+<td><p style="text-align: right;">1 août 1973</td>
+<td>&nbsp;L'un des quatre membres fondateurs</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/250px-Flag_of_Haiti.svg.png" id="Image8" class="flag" alt="drapeau" width="250" height="150"></td>
+<td><a href="https://en.wikipedia.org/wiki/Haiti" target="_blank">Haiti</a></td>
+<td><p style="text-align: right;">2 juillet 2002</td>
+<td>&nbsp;Adhésion provisoire le 4 juillet 1998</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/250px-Flag_of_Jamaica.svg.png" id="Image9" class="flag" alt="drapeau" width="250" height="150"></td>
+<td><a href="https://en.wikipedia.org/wiki/Jamaica" target="_blank">Jamaïque</a></td>
+<td><p style="text-align: right;">1 août 1973</td>
+<td>&nbsp;L'un des quatre membres fondateurs</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_Montserrat.svg/250px-Flag_of_Montserrat.svg.png" id="image01" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Montserrat" target="_blank">Montserrat</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td><a href="https://en.wikipedia.org/wiki/British_Overseas_Territories" target="_blank">Territoire britannique d'outre-mer</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg/125px-Flag_of_Saint_Kitts_and_Nevis.svg.png" id="Image11" class="flag" alt="drapeau" width="125" height="84"></td>
+<td><a href="https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis" target="_blank">Saint Kitts et Nevis</a></td>
+<td><p style="text-align: right;">26 juillet 1974</td>
+<td>&nbsp;Union <a href="https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla" target="_blank">Saint Christoph-Nevis-Anguilla</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Saint_Lucia.svg/250px-Flag_of_Saint_Lucia.svg.png"
+id="Image12" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Saint_Lucia" target="_blank">Sainte Lucie</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Flag_of_Saint_Vincent_and_the_Grenadines_%281907-1979%29.svg/250px-Flag_of_Saint_Vincent_and_the_Grenadines_%281907-1979%29.svg.png" id="Image13" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines" target="_blank">S<sup>t</sup>. Vincent et les Grenadines</a></td>
+<td><p style="text-align: right;">1 mai 1974</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flag_of_Suriname.svg/250px-Flag_of_Suriname.svg.png" id="Image14" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Suriname" target="_blank">Suriname</a></td>
+<td><p style="text-align: right;">4 juillet 1995</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Trinidad_and_Tobago.svg/250px-Flag_of_Trinidad_and_Tobago.svg.png" id="Image15" class="flag" alt="drapeau" width="250" height="150"></td>
+<td><a href="https://en.wikipedia.org/wiki/Trinidad_and_Tobago" target="_blank">Trinidad et Tobago</a></td>
+<td><p style="text-align: right;">1 août 1973</p></td>
+<td>&nbsp;L'un des quatre membres fondateurs</td>
+</tr>
+<tr>
+<td rowspan="7"><b>Membres associés</b></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Anguilla.svg/250px-Flag_of_Anguilla.svg.png" id="Image16" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Anguilla" target="_blank">Anguilla</a></td>
+<td><p style="text-align: right;">4 juillet 1999</p></td>
+<td rowspan="4"><a href="https://en.wikipedia.org/wiki/British_Overseas_Territories" target="_blank">Territoire britanique d'outre-mer</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/250px-Flag_of_Bermuda.svg.png" id="Image17" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Bermuda" target="_blank">Bermuda</a></td>
+<td><p style="text-align: right;">2 juillet 2003</p></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Flag_of_the_British_Virgin_Islands.svg/250px-Flag_of_the_British_Virgin_Islands.svg.png" id="Image18" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/British_Virgin_Islands" target="_blank">Iles Vierges Britaniques</a></td>
+<td><p style="text-align: right;">2 juillet 1991</p></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_the_Cayman_Islands.svg/250px-Flag_of_the_Cayman_Islands.svg.png" id="Image19" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://en.wikipedia.org/wiki/Cayman_Islands" target="_blank">Îles Caïmans</a></td>
+<td><p style="text-align: right;">16 mai 2002</p></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Flag_of_Cura%C3%A7ao.svg/250px-Flag_of_Cura%C3%A7ao.svg.png" id="Image20" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Cura%C3%A7ao" target="_blank">Curaçao</a></td>
+<td><p style="text-align: right;">28 juillet 2024</p></td>
+<td>&nbsp;Membre du <a href="https://en.wikipedia.org/wiki/Kingdom_of_the_Netherlands" target="_blank">Royaume des Pays-Bas</a></td>
+</tr>
+<tr style="background-color: #ff0;">
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag-of-Martinique.svg/250px-Flag-of-Martinique.svg.png" id="Image21" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Martinique" target="_blank">Martinique</a></td>
+<td><p style="text-align: right;">20 Février 2025</p></td>
+<td><a href="https://en.wikipedia.org/wiki/British_Overseas_Territories" target="_blank">Territoire français d'outre-mer</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/250px-Flag_of_the_Turks_and_Caicos_Islands.svg.png" id="Image22" class="flag" alt="drapeau" width="250" height="125"></td>
+<td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/250px-Flag_of_the_Turks_and_Caicos_Islands.svg.png" target="_blank">Îles Turks et Caicos</a></td>
+<td><p style="text-align: right;">2 juillet 1991</td>
+<td><a href="https://en.wikipedia.org/wiki/British_Overseas_Territories" target="_blank">Territoire britanique d'outremer</a></td>
+</tr>
+<tr>
+<td rowspan="7"><b>Membres <br>obser-<br>vateurs</b></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Aruba.svg/250px-Flag_of_Aruba.svg.png" id="Image23" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Aruba" target="_blank">Aruba</a></td>
+<td></td>
+<td>&nbsp;Membre du <a href="https://en.wikipedia.org/wiki/Kingdom_of_the_Netherlands" target="_blank">Royaume des Pays-Bas</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/250px-Flag_of_Colombia.svg.png" id="Image24" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Colombia" target="_blank">Colombie</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_the_Dominican_Republic_%28up_to_1844%29.svg/250px-Flag_of_the_Dominican_Republic_%28up_to_1844%29.svg.png" id="Image25" class="flag" alt="drapeau" width="250" height="157"></td>
+<td><a href="https://en.wikipedia.org/wiki/Dominican_Republic" target="_blank">République Dominicaine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png" id="Image26" class="flag" alt="drapeau" width="250" height="143"></td>
+<td><a href="https://en.wikipedia.org/wiki/Mexico" target="_blank">Mexique</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/250px-Flag_of_Puerto_Rico.svg.png" id="Image27" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Puerto_Rico" target="_blank">Puerto Rico</a></td>
+<td></td>
+<td><a href="https://en.wikipedia.org/wiki/Unincorporated_territories_of_the_United_Statespx" target="_blank">Territoire non incorporé des États-Unis</a></td>
+</tr>
+<tr>
+<td><img 
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Sint_Maarten.svg/250px-Flag_of_Sint_Maarten.svg.png" id="Image28" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Sint_Maarten" target="_blank">Saint Martin</a></td>
+<td></td>
+<td>&nbsp;Membre du <a href="https://en.wikipedia.org/wiki/Kingdom_of_the_Netherlands" target="_blank">Royaume des Pays-Bas</a></td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/250px-Flag_of_Venezuela.svg.png" id="Image29" class="flag" alt="drapeau" width="250" height="167"></td>
+<td><a href="https://en.wikipedia.org/wiki/Venezuela" target="_blank">Venezuela</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:14px; margin-bottom:5em; color: var(--rouge); margin-top: 10px;">En cliquant sur les liens du tableau, on accède à une abondante documentation de Wikipédia. Cette documentation est en anglais mais une traduction en plusieurs langues est offerte.</p>
+<br><hr class="point" style="width: 60%;"><br>
+<p style="margin-top: 2em;">&nbsp;</p>
 <div class="conteneur1">
 <div class="conteneur2">
 <iframe src="https://player.vimeo.com/video/1057540758?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Climate finance, special needs of SIDS critical for CARICOM"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
-<p style="font-size:12.8px; color: #a00;">Amrikha Singh, gestionnaire de programme pour le développement durable&nbsp;: <em>«&nbsp;le financement de la lutte contre le changement climatique et les besoins spécifiques des petits États insulaires en développement sont essentiels pour la CARICOM&nbsp;». <a href="images-projet-village/Amrikha-Singh-traduction.txt">[Voir la traduction]</a></em></p>
+<p style="font-size:14px; color: var(--rouge); margin-top: 10px;">Amrikha Singh, gestionnaire de programme pour le développement durable&nbsp;: <em>«&nbsp;le financement de la lutte contre le changement climatique et les besoins spécifiques des petits États insulaires en développement sont essentiels pour la CARICOM&nbsp;». <a href="images-projet-village/Amrikha-Singh-traduction.txt">[Voir la traduction]</a></em></p>
 </div>
 <br><br>
 <br><hr class="point"><br>
@@ -1867,7 +1345,7 @@ ATTENTION&nbsp;!</b></p>
 </div>
 <br>
 <br>
-<footer>
+<footer class="footer">
 <p><b style="font-size: 120%">Valérie CHARLERY</b><br>
 <b>Téléphone&nbsp;:</b> 06 96 32 63 00<br>
 <b>Web&nbsp;:</b> <a href="http://www.canopyeventdesign.com" target="_blank">www.canopyeventdesign.com</a><br>
@@ -1877,5 +1355,30 @@ ATTENTION&nbsp;!</b></p>
 </footer>
 </div>
 </main>
+
+<script>
+// Sélection de la modale et du contenu de la modale
+const modal = document.getElementById('toc');
+const modalContent = modal.querySelector('.modal_content');
+
+// Ajout d'un écouteur d'événement pour détecter les clics
+modal.addEventListener('click', (event) => {
+  // Si le clic se produit en dehors du contenu de la modale, on cache la modale
+  if (!modalContent.contains(event.target)) {
+    window.location.hash = '#close'; // Ferme la modale en changeant le hash
+  }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const password = prompt("Veuillez entrer le mot de passe pour accéder à cette page :");
+  if (password !== "martinique") {
+    alert("Accès refusé. Mot de passe incorrect.");
+    window.location.href = "https://www.google.com"; // Redirection en cas d'échec
+  } else {
+    alert("Bienvenue !");
+  }
+});
+</script>
 </body>
 </html>
