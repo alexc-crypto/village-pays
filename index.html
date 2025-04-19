@@ -3,175 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-content="Un événement multi-cibles, convivial et festif, visant à Mettre en lumière la Martinique et un pays invité chaque année.">
+<meta name="description" content="Un événement multi-cibles, convivial et festif, visant à Mettre en lumière la Martinique et un pays invité chaque année.">
 <meta name="robots" content="noindex, nofollow">
 <title>Village de Pays/Village Martinique</title>
-<link rel="shortcut icon" type=image/x-icon
-href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQAAAAA3iMLMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAA2SURBVHjaYmBgYGBgYGB/wCjBwMKZzCz0kYnhDxPTAybmA0yMBkwMLEw/PjBzcDGwP4AoBAwAvxwIPa1iHIEAAAAASUVORK5CYII=">
+<link rel="stylesheet" href="feuille_de_style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-/* variables polices et couleurs */
-:root {
-  --marron: #400;
-  --marron2: #500;
-  --rouge: #a00;
-  --gris1: #eee;
-  --gris2: #888;
-  --gris3: #333;
-  --gris4: #f5f5f5;
-  --gris5: #ddd;
-  --gris6: #666;
-  --noir: #000;
-  --blanc: #fff;
-  --turquoise: #0ff;
-  --jaune: #ff0;
-  --rose: #fef;
-  --orange: #ed9;
-  --rose_transpa: rgba(255, 238, 255, 0.9);
-  --police1: "Playfair Display", serif;
-  --police2: "Roboto", sans-serif;
-}
-html {scroll-behavior: smooth;} /* effet de défilement régulier au document */
-html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%;,line-height: 140%}
-body {font-size: 1em; font-family: var(--police2), Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif; background-color: var(--gris1); color: var(--noir); font-weight: 300; text-align: left;}
-.page {max-width: 1024px; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; font-weight: 300;}
-.roboto {font-family: "Roboto", sans-serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
-.playfair-display {font-family: "Playfair Display", serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal;}
-h1,h2,h3,h4 {font-family: inherit; font-weight: bold;}
-h1 {color: var(--marron); font-size: 2em; margin: 2em 0;}
-h2, .h2 {color: var(--marron); font-size: 1.7em; margin: 1em 0;}
-h3, .h3 {color: var(--marron); font-size: 1.4em; margin: 1em 0;}
-h4, .h4 {color: var(--marron); font-size: 1.1em; margin: 1em 0; font-weight: bold;}
-b {font-size: 110%; font-weight: 600;}
-.exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}
-a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 5px; border-radius: 3px;}
-a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign {color: var(--blanc); background-color: var(--gris3); /* padding: 1px 5px; border-radius: 5px; */}
-.tpetit {font-size: 12.8px; line-height: normal;}
-.surlign {/*background-color: var(--jaune);*/ background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
-.surlign2 {background-color: var(--turquoise); padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%; font-size: 1.1em;}
-/* .surlign3 {background-color: var(--turquoise);padding: 4px;margin: 0 3px;text-decoration: none;line-height: 120%; border-radius: 5px;} */
-/* .surlign4 {background-color: var(--rose); padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;border-radius: 5px; font-size: 1.1em;} */
-.surlign5 {background-color: var(--orange); padding: 1px 5px; margin: 0 3px; box-shadow: 1px 1px 1px #ddd; text-decoration: none;
-line-height: 160%; border-radius: 5px; font-size: 1em;}
-.surlign6 {background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px;
-border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
-a[target="_blank"]:after {content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E); margin: 0 3px 0 1px}
-strong {font-weight: 900; font-size: 110%;}
-.centre {text-align: center;}
-img {border: none; width: 100%; height: auto}
-.image01 {max-width: 1200px; max-height: 797px;} 
-.image02 {max-width: 1024px; max-height: 720px;} 
-.image03 {max-width: 480px; /* max-height:480px; */color: var(--blanc); display: block; font-size: 0.9em; position: relative; top: 0; left: 0;}
-.image04 {max-width: 454px; max-height: 400px;}
-.image05 {max-width: 350px; max-height: 1024px; margin: 0 0 1em 1em;}
-.image06{max-width: 300px; max-height: 340px; margin: 1em auto; }
-.image07 {max-width: 292px; max-height: 1040px; margin: 0 0 1em 1em;}
-.image08 {max-width: 128px; max-height: 106px; margin: 0; }
-.logo {max-width: 300px; max-height: 100px; margin: 0 1em 0 0; /*float: left;*/}
-.logo img {width: 80%;}
-.image01, .image02, .image04, .image05, .image06, .image07, .image08, .logo {color: var(--rouge); display: block; font-size: 12.8px;}
-.image01, .image02, .image03, .image04 {margin: 0 auto;}
-.image04, .image06, .image08 {text-align: center;}
-.image05, .image07 {float: right;}
-.point {height: 0; border: 3px dotted var(--rouge); border-bottom: 0; border-right: 0; border-left: 0; margin: 0 auto; background-color: transparent;}
-/* .icone {max-width: 48px; max-height: 62px; font-size: 150%; margin: 0; font-weight: bold; vertical-align: middle;} */
-blockquote {background: var(--gris4); border-left: 10px solid var(--marron); margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C" "\201D";}
-blockquote:before {color: var(--marron); content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;}
-.allsmall {font-variant-caps: all-small-caps;}
-.manus {text-align: center; font-family: var(--police1), serif; /* font-optical-sizing: auto; */ font-style: normal;color: var(--rouge);}
-.coche {list-style: none; margin-left: 2em; padding-left: 1em;}
-.coche li {margin-bottom: 0.5em; margin-top: 0.5em;}
-.coche li::before {display: inline-block; content: "✅"; width: 1.5em; margin-left: -1.5em;}
-/*
-.coche li {margin-bottom: 0.5em; padding-left: 1.5em;  list-style: none; position: relative;}
-.coche li::before {content: "✔️"; position: absolute; left: 0; color:var(--rouge, #a00);}
-*/ 
-/* ✔️ Icône check personnalisable */
-.disc {list-style: none; margin-left: 2em; padding-left: 1em;}
-.disc li {margin-bottom: 0.2em; margin-top: 0.2em; line-height: 120%; font-size: 0.9em;}
-.disc li::before {display: inline-block; content: "•"; width: 1em; margin-left: -1em; color: var(--rouge);}
-ol {list-style-type: decimal;}
-.cartouche {max-width: 480px; margin: 0.5em auto; padding: 0.5em; background-color: var(--rose_transpa); color: var(--gris3);  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius: 0.5em; text-align: center; box-sizing: border-box; overflow: auto; hyphens: auto;}
-.medallion {display: block; text-align: center; margin: 0 auto; font-weight: bold; background-color: var(--marron); border-radius: 1em;}
-.medallion img {border-radius: 50%; margin-bottom: -1em;}
-
-@media screen and (max-width: 768px) {
-.center {display: flex; width: 100%; align-items: center; justify-content: center; font-size: 1em;}
-.rondrouge-small {padding: .4em; margin-top: .4em; font-size: 1em;}
-}
-.rondrouge, .rondrouge-small {max-height: 20em; margin: 0 auto; text-align: center; border: solid 2px var(--rouge); border-radius: 2em; font-variant-caps: all-small-caps; box-sizing: border-box; word-break: break-all; line-height: 1.2em;padding: 1em;}
-.rondrouge {max-width: 20em;}
-.rondrouge-small {display: inline-block; margin-top: .1em;}
-.clearfix {clear: both;}
-.lateral {max-width: 26em; background-color: rgb(255,238,255,0.6); padding: 1px 5px; margin: 0 3px; text-decoration: none; line-height: 120%; border-radius: 0.5em; font-size: 1em; font-variant-caps: normal;}
-.rouge {color: var(--rouge);}
-table,th,td {border: solid 1px #7CA0B5; border-collapse: collapse;
-border-spacing: 0; overflow-wrap: break-word;}
-table {margin: 0 auto; font-size: 1em; max-width: 1024px;}
-td {padding: 0 5px; margin: 0;}
-th {background-color: var(--marron); color: var(--blanc); text-align: center; font-size: 1.2em;}
-tr:hover {background-color: var(--gris5);}
-tr:nth-child(even) {background-color: var(--gris4);}
-.droite {text-align: right}
-.decalhaut {margin-top: -0.5em;}
-.ampli1 {font-size: 1.2em; font-weight: bold;}
-.conteneur1 {max-width: 640px; margin: 0 auto; /*vidéo centrée*/}
-.conteneur2 {position: relative; line-height: normal; width: 100%; height: 0; padding-bottom: 56.25%; /*vidéo 16:9*/}
-.conteneur2b {position: relative; line-height: normal; width: 100%; height: 0; margin:0 auto; color: var(--rouge); font-size: 85%; padding-bottom: 56.25%; /*vidéo 16:9*/}
-iframe,video {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
-/* Bouton pour ouvrir la popup - Grok3 */
-.bouton-toc {display: block; text-align: center; position: sticky; /*top: 20px;*/ top: -10px; left: 0; font-size: 1.5em; z-index: 1000; padding: 10px 20px; border-radius: 5px; margin-top: -60px; margin-bottom: 0;}
-/* background-color: #1abc9c; */ /* Turquoise */
-
-/* Popup */
-.modal {visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); /* Overlay sombre */ z-index: 1000; display: flex; justify-content: center; align-items: center;}
-.modal:target {visibility: visible; opacity: 1; transition: opacity 0.3s ease;}
-.modal:target .modal_content {transform: scale(1); opacity: 1;}
-/* Contenu de la popup */
-.modal_content {padding: 1.5em 2em; max-width: 900px; width: 90%; position: relative;transform: scale(0.9); transition: transform 0.3s ease, opacity 0.3s ease;}
-/* Table des matières */
-.sommaire {width: 100%; max-height: 80vh; /* Limite la hauteur pour éviter un défilement excessif */ overflow-y: auto; /* Défilement vertical uniquement si nécessaire */
-padding: 1em; background-color: var(--rose_transpa);
-/* background-color: rgba(255, 238, 255, 0.95); */ /* Fond légèrement plus opaque */ color: var(--gris3); line-height: 1.2em; text-align: left; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); font-size: 1.2em; border-radius: 0.5em; box-sizing: border-box; word-break: break-word; hyphens: auto;}
-.sommaire h2 {font-size: 1.5rem; /* color: #2c3e50;*/ /* Bleu nuit */ margin-bottom: 20px; text-align: center;}
-.sommaire ol {padding-left: 20px;}
-.sommaire ol li {margin: 8px 0;}
-.sommaire ol li a {/* color: #1abc9c; *//* Turquoise */
-text-decoration: none; transition: color 0.3s;}
-.sommaire ol li a:hover, .sommaire ol li a:focus {/* color: #16a085; *//* Turquoise plus foncé */outline: none;}
-/* Bouton de fermeture */
-.modal_close {position: absolute; top: 2rem; right: 3rem; color: var(--gris6); font-size: 1.2rem; text-decoration: none; transition: color 0.3s;}
-.modal_close:hover, .modal_close:focus {color: var(--gris3);}
-/* Responsive design */
-@media (max-width: 768px) {
-.bouton-toc {font-size: 1.2em; padding: 8px 15px;}
-.modal_content {width: 95%; padding: 1em;}
-.sommaire {font-size: 1em; max-height: 90vh;}
-.sommaire h2 {font-size: 1.3rem;}
-}
-
-/* Style du header avec l'image en arrière-plan */
-.hero {position: relative; height: 50vh; background-image: url('images-projet-village/Ville-de-Fort-de-France2.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: space-between;}
-/* 50 vh Hauteur pleine écran */
-/* Overlay pour améliorer la lisibilité du texte sur l'image */
-.hero::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);} 
-/* Overlay sombre semi-transparent */
-
-.ancre {margin: 0 auto; box-sizing: border-box; display: block; width: 0.1em;height:0.1em;}
-.flag {max-width: 40px; max-height: 30px; vertical-align: middle; display: block; margin: 2px auto;}
-table.caricom {width: 100%; table-layout: fixed; font-size: 0.8em;}
-table.caricom td {height: 40px;}
-.footer {display: flex; justify-content: space-between; background-color: var(--gris4); padding: 1em; border-top: 1px solid #ccc;}
-.footer p {margin: 0;}
-.footer .logo img {max-width: 200px;}
-.modal {visibility: hidden;  opacity: 0; transition: visibility 0.3s, opacity 0.3s ease-in-out;}
-.modal:target {visibility: visible; opacity: 1;}
-</style>
+<link rel="stylesheet" href="feuille_de_style.css">
+<link rel="apple-touch-icon" sizes="57x57" href="images-projet-village/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images-projet-village/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images-projet-village/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images-projet-village/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images-projet-village/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images-projet-village/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images-projet-village/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images-projet-village/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images-projet-village/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images-projet-village/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images-projet-village/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images-projet-village/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images-projet-village/favicon-16x16.png">
+<link rel="manifest" href="images-projet-village/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images-projet-village/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <!-- En-tête avec l'image en arrière-plan -->
@@ -203,7 +61,7 @@ table.caricom td {height: 40px;}
 </li>
 <li><a href="#ref-01-03-00">Le Modèle</a>
 <ol>
-<li><a href="#ref-01-03-01">Programme détaillé : 4 jours d'événements ciblés.</a></li>
+<li><a href="#ref-01-03-01">Programme détaillé&nbsp;: 4 jours d'événements ciblés.</a></li>
 </ol>
 </li>
 <li><a href="#ref-01-04-00">Les Espaces</a>
@@ -272,7 +130,7 @@ table.caricom td {height: 40px;}
 </div>
 </div>
 </div>
-<p><a href="#haut" class="surlign2 scroll-to-top" style="position: fixed; z-index: 100; bottom: 20px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut</a></p>
+<p><a href="#haut" class="surlign2 scroll-to-top" style="position: fixed; z-index: 100; bottom: 20px; right: 10px; transition: background-color 1s ease;">⬆️&nbsp;Haut&nbsp;</a></p>
 <h1 id="ref-01-00-00" class="exergue">Village de Pays - Village Martinique</h1>
 <main>
 <div class="page">
@@ -283,19 +141,19 @@ table.caricom td {height: 40px;}
 🛜&nbsp;<a href="https://www.canopyeventdesign.com" target="_blank">www.canopyeventdesign.com</a><br>
 <span style="font-size: 1em; font-weight: bold;">&#x2709;&nbsp;<a
 href="mailto:contact@canopyeventdesign.com" target="_blank">&nbsp;contact@canopyeventdesign.com</a></span><br><br>
-<!-- VOUS PRÉSENTE&nbsp;:<br> -->
 </p>
-<!-- <strong>«&nbsp;Village de Pays&nbsp;»</strong> <br><b>/</b><br> <strong>«&nbsp;Village MARTINIQUE&nbsp;»</strong><br> -->
 </div>
 <a class="ancre" id="ref-01-01-00">&nbsp;</a>
 <h2 class="manus" style="text-align: center;">Mise en scène de messages et d’espaces</h2>
 <div class="image03">
 <div class="medallion">
-<img src="images-projet-village/Valerie.png" alt="Photo de Valérie Charlery - canopyeventdesign.com">
+<picture>
+<source srcset="images-projet-village/Valerie.webp">
+<img src="images-projet-village/Valerie.webp" loading="lazy" width="480" height="480" alt="Photo de Valérie Charlery - gérante de l'agence canopyeventdesign.com">
+</picture>
 <strong style="font-size: 1.4em;">Bonjour&nbsp;!</strong><br>
 <i>Je suis Valérie Charlery,<br>
-gérante de l’agence Canopy Event Design.<br> Je vous donne rendez-vous au fil de ces pages afin de vous
-présenter le projet&nbsp;:<br>
+gérante de l’agence Canopy Event Design.<br> Je vous donne rendez-vous au fil de ces pages afin de vous présenter le projet&nbsp;:<br>
 <strong>«&nbsp;Village de Pays&nbsp;»</strong>
 <br><b>/</b><br><strong>«&nbsp;Village MARTINIQUE&nbsp;»<br>OU&nbsp;:</strong></i>
 </div>
@@ -306,8 +164,7 @@ présenter le projet&nbsp;:<br>
 À LA RENCONTRE DU MONDE&nbsp;!</h2>
 <blockquote>
 <p class="surlign5 ampli1">
-Le projet «&nbsp;Village de Pays/Village Martinique&nbsp;» événement novateur et ambitieux, vise à
-créer un espace d'échanges et de découvertes entre la Martinique et d'autres pays, en mettant en lumière leurs richesses culturelles, économiques et touristiques. Un événement multi-cibles, fédérateur, convivial et festif, ouvert à un large public. Il s'adresse à la fois aux acteurs institutionnels et économiques, aux professionnels du tourisme, aux jeunes et au grand public. L'objectif est de fédérer toutes les forces vives de la Martinique autour d'un projet commun, tout en s'ouvrant sur le monde.</p>
+Le projet «&nbsp;Village de Pays/Village Martinique&nbsp;» événement novateur et ambitieux, vise à créer un espace d'échanges et de découvertes entre la Martinique et d'autres pays, en mettant en lumière leurs richesses culturelles, économiques et touristiques. Un événement multi-cibles, fédérateur, convivial et festif, ouvert à un large public. Il s'adresse à la fois aux acteurs institutionnels et économiques, aux professionnels du tourisme, aux jeunes et au grand public. L'objectif est de fédérer toutes les forces vives de la Martinique autour d'un projet commun, tout en s'ouvrant sur le monde.</p>
 </blockquote>
 <p>Le projet <b>«&nbsp;Village de Pays/Village Martinique&nbsp;»</b>, initie une démarche prospective pour exploiter le potentiel martiniquais.</p><br>
 <p>En réponse aux défis de la mondialisation, ce projet promeut l’identité martiniquaise tout en renforçant les liens internationaux.</p><br>
@@ -318,7 +175,13 @@ créer un espace d'échanges et de découvertes entre la Martinique et d'autres 
 <p>L’expérience sera réciproque, car la Martinique sera à son tour mise en lumière dans chacun des pays
 accueillis grâce au <span class="surlign5">«&nbsp;Village Martinique&nbsp;»</span> qui s’exportera.</p>
 <br>
-<div class="image01"><img src="images-projet-village/under-canopy-event.png" width="640" height="360" alt="under canopy event" loading="lazy">Under canopy event</div>
+<div class="image01">
+<picture>
+<source srcset="images-projet-village/under-canopy-event.webp">
+<img src="images-projet-village/under-canopy-event.webp" loading="lazy"  width="640" height="360" alt="under canopy event">
+</picture>
+Under canopy event
+</div>
 <a class="ancre" id="ref-01-02-01"></a>
 <h3>Les objectifs</h3>
 <ul class="coche">
@@ -337,7 +200,14 @@ talents, cuisiniers, vidéastes, concepteurs 3D, commerciaux bilingues, étudian
 économiques autour du projet et en impliquant la diaspora expatriée.</li>
 </ul>
 <a class="ancre" id="ref-01-02-02"></a>
-<h3>Les axes</h3>
+<div class="image02">
+<picture>
+<source srcset="images-projet-village/70ec84db2.webp">
+<img src="images-projet-village/70ec84db2.webp" loading="lazy"  width="292" height="1000" alt="Produits de l'industrie agroalimentaire locale">
+</picture>
+Produits de l'industrie agroalimentaire locale
+</div>
+<h3 style="margin-top: 2em; display: block;">Les axes</h3>
 <ol>
 <li><strong class="allsmall">Économie</strong><br>
 Opportunités d'import-export, d'investissements et de développement de partenariats commerciaux et artisanaux.
@@ -349,7 +219,7 @@ Propositions de stages dans de grandes entreprises de part et d'autre, échanges
 <li><strong class="allsmall">Culture</strong><br>
 Exploration de la gastronomie, de la musique, de la danse et de l’artisanat.</li>
 </ol>
-<div class="image07"><img src="images-projet-village/70ec84db2.png" width="292" height="1000" alt="Produits de l'industrie agroalimentaire locale">Produits de l'industrie agroalimentaire locale</div>
+
 <a class="ancre" id="ref-01-02-03"></a>
 <h3>«&nbsp;Village de Pays&nbsp;»&nbsp: plateforme d'échanges économiques.</h3>
 <p><b>«&nbsp;Village de Pays&nbsp;»</b> permettra à nos compatriotes martiniquais d’aller à la rencontre de cultures différentes, à la découverte de pays ou de régions depuis chez eux, tout en leur donnant envie d’aller plus loin grâce à des offres de séjours alléchantes.</p><br>
@@ -402,10 +272,16 @@ background-size: cover; background-position: center;font-weight: bold;">
 <h2 class="manus">Les Espaces</h2>
 <a class="ancre" id="ref-01-04-01"></a>
 <h3 class="allsmall">Le parc Aimé Césaire&nbsp;: un hub mondial.</h3>
-<div class="image02"><a href="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg"><img src="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.jpg" width="1024" height="685" alt="Le parc Aimé Césaire, un hub mondial"></a>Le parc Aimé Césaire&nbsp;: vue de l'intérieur. [Cliquer sur l'image pour l'agrandir].<br>
-Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DDesktop" target="blank">«&nbsp;Street View dans Google Maps&nbsp;»</a></div><br>
+<div class="image05b">
+<picture>
+<source srcset="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.webp">
+<img src="images-projet-village/grand-carbet-parc-floral-martinique-1024x685.webp" width="1024" height="685" loading="lazy" alt="Le parc Aimé Césaire, un hub mondial">
+</picture>
+Le parc Aimé Césaire vu de l'intérieur.<br>
+Ci-dessous, la vue panoramique 360° du quartier du parc à l'aide <a href="https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DDesktop" target="blank">«&nbsp;Street View dans Google Maps&nbsp;»</a></div>
+<br>
 <div class="conteneur2b" style="display: inline-block;">
-<iframe src="https://www.google.com/maps/embed?pb=!4v1743036383858!6m8!1m7!1sCAoSLEFGMVFpcE9tTVBDa0VyNXAwT2dubFJfRnoyNjEyOVpud1lBcVZJVE1RbWpC!2m2!1d14.60763870037384!2d-61.07216201103901!3f322.70619230260456!4f-0.9103431688163255!5f2.554641168909145" width="600" height="450" style="border:0;" loading="lazy"></iframe></div>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1743036383858!6m8!1m7!1sCAoSLEFGMVFpcE9tTVBDa0VyNXAwT2dubFJfRnoyNjEyOVpud1lBcVZJVE1RbWpC!2m2!1d14.60763870037384!2d-61.07216201103901!3f322.70619230260456!4f-0.9103431688163255!5f2.554641168909145" width="600" height="450" style="border:0;" title="Le quartier du parc Aimé Césaire. Vue panoramique 360°" loading="lazy"></iframe></div>
 <div style="width: 100%; margin: 0 auto; font-size:12.8px; color: var(--rouge); line-height: 1em;">Le quartier du parc Aimé Césaire. Vue panoramique 360°. Cliquer sur le lien en haut à gauche pour accéder à Google Maps. (Cette application vous permet d'effectuer une visite virtuelle panoramique de divers lieux de la Martinique, de Trinidad et d'ailleurs...).</div>
 <br>
 <p>Dans le cadre magique et symbolique du Parc Aimé Césaire, l’Agence Canopy Event &amp; Design souhaite plonger les participants dans l’ambiance du pays à l’aide de procédés immersifs innovants, tels que le mapping vidéo, le son, la lumière et d’autres éléments sensoriels qui <b>feront vivre aux participants une expérience unique</b>.</p><br>
@@ -565,9 +441,7 @@ animée dans sa capitale moderne, Port of Spain. Tobago, à deux heures de Trini
 <a class="ancre" id="ref-01-06-01"></a>
 <h3 class="allsmall">Les attraits pour le pays</a></h3>
 <ul class="coche">
-<li>Compte tenu de notre proximité géographique, il était important pour nous de lancer le concept
-<b>«&nbsp;Village de Pays/Village Martinique&nbsp;»</b> avec un pays situé dans le bassin caribéen. La
-destination offre de nombreux atouts et de nombreuses perspectives d’échanges avec la Martinique. L’actualité récente a conforté ce choix.</li>
+<li>Compte tenu de notre proximité géographique, il était important pour nous de lancer le concept <b>«&nbsp;Village de Pays/Village Martinique&nbsp;»</b> avec un pays situé dans le bassin caribéen. La destination offre de nombreux atouts et de nombreuses perspectives d’échanges avec la Martinique. L’actualité récente a conforté ce choix.</li>
 </ul>
 <blockquote>
 <ul class="disc">
@@ -599,7 +473,7 @@ lexicale de français, de nombreuses familles trinidadiennes revendiquent une as
 <div class="conteneur1">
 <div class="conteneur2">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/xAAl_NgVDtc?si=Sbg--XxMU9IuMZGl"
-title="YouTube video player"></iframe>
+title="La danse bélé à Trinidad &amp; Tobago"></iframe>
 </div>
 <span class="rouge tpetit">The bélé folk dance of Trinidad &amp; Tobago</span>
 </div>
@@ -607,7 +481,7 @@ title="YouTube video player"></iframe>
 <div class="conteneur1">
 <div class="conteneur2">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/XrbAyGRzp3c?si=jd9RsGngP54-5MP0"
-title="YouTube video player"></iframe>
+title="La danse bélé à la Martinique"></iframe>
 </div>
 <span class="rouge tpetit">Le bélé de la Martinique - un extrait de «&nbsp;Bélé, tambour vivant&nbsp;»</span>
 </div>
@@ -633,11 +507,23 @@ title="YouTube video player"></iframe>
 <li><b>BTP (matériaux et technique de construction)</b></li>
 <li><b>...</b></li>
 </ul>
-<div class="image08"><img src="images-projet-village/848b984a.png" width="256" height="154" alt="drapeau de Trinidad" style="border-radius: 1em;">Trinidad</div>
+<div class="image08">
+<picture>
+<source srcset="images-projet-village/848b984a.webp">
+<img src="images-projet-village/848b984a.webp" loading="lazy"  width="256" height="154" alt="drapeau de Trinidad" style="border-radius: 1em;">
+</picture>
+Trinidad
+</div>
 <div class="center">
 <div class="image05">
-<a href="images-projet-village/cocoa-research-station.jpg"><img src="images-projet-village/cocoa-research-station.jpg" width="1200" height="797" alt="station de recherche universitaire sur le cacao"></a>Banque de gènes du Cacao - station de recherche universitaire sur le cacao.<br>
-4,73 ha plantés en 1990<br>
+<a href="images-projet-village/cocoa-research-station.webp">
+<picture>
+<source srcset="images-projet-village/cocoa-research-station.webp">
+<img src="images-projet-village/cocoa-research-station.webp" loading="lazy"  width="1200" height="797" alt="station de recherche universitaire sur le cacao">
+</picture>
+</a>
+Banque de gènes du Cacao - station de recherche universitaire sur le cacao.<br>
+4,73 ha plantés en 1990<br>	
 [Cliquer sur l'image pour l'agrandir.]<br><br>
 </div>
 </div>
@@ -659,10 +545,22 @@ Les plus&nbsp;: Le recyclage et la consigne des bouteilles qui sont réutilisée
 </ul>
 </div>
 <br>
-<div class="image08"><img src="images-projet-village/91b53b4.png" width="256" height="171" alt="Drapeau de la Martinique" style="border-radius: 1em;">Martinique</div>
+<div class="image08">
+<picture>
+<source srcset="images-projet-village/91b53b4.webp">
+<img src="images-projet-village/91b53b4.webp" loading="lazy"  width="256" height="171" alt="Drapeau de la Martinique" style="border-radius: 1em;">
+</picture>
+Martinique
+</div>
 <div class="center">
 <div class="image05">
-<a href="images-projet-village/la-kalinago.webp"><img src="images-projet-village/la-kalinago.webp" width="350" height="530" alt="La Kalinago, une bière martiniquaise à base de manioc"></a>La Kalinago, une bière martiniquaise à base de manioc<br>
+<a href="images-projet-village/la-kalinago.webp">
+<picture>
+<source srcset="images-projet-village/la-kalinago.webp">
+<img src="images-projet-village/la-kalinago.webp" loading="lazy"  width="800" height="530" alt="La Kalinago, une bière martiniquaise à base de manioc">
+</picture>
+</a>
+La Kalinago, une bière martiniquaise à base de manioc<br>
 [Cliquer sur l'image pour l'agrandir.]<br><br>
 </div>
 </div>
@@ -685,11 +583,22 @@ une bière artisanale à base de manioc fabriquée en Martinique</li>
 <h3>Parmi les principaux attraits de Trinidad &amp; Tobago&nbsp;:</h3><br>
 <div class="center">
 <div class="image05">
-<a href="images-projet-village/Caroni-Bird-Sanctuary.jpg"><img src="images-projet-village/Caroni-Bird-Sanctuary.jpg" width="1024" height="685"
-alt="Cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique de Trinidad"></a>Caroni Bird Sanctuary&nbsp;: cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique
+<a href="images-projet-village/Caroni-Bird-Sanctuary.webp">
+<picture>
+<source srcset="images-projet-village/Caroni-Bird-Sanctuary.webp">
+<img src="images-projet-village/Caroni-Bird-Sanctuary.webp" width="1024" height="685" alt="Cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique de Trinidad">
+</picture>
+</a>
+Caroni Bird Sanctuary&nbsp;: cette mangrove est l'habitat naturel de «&nbsp;l'ibis écarlate&nbsp;», l'oiseau emblématique
 de Trinidad"<br>
 [Cliquer sur l'image pour l'agrandir.]<br><br>
-<a href="images-projet-village/maracas-water-falls.webp"><img src="images-projet-village/maracas-water-falls.webp" width="768" height="1024" alt="Cascade de Maracas"></a>Paramin et la cascade de Maracas<br>
+<a href="images-projet-village/maracas-water-falls.webp">
+<picture>
+<source srcset="images-projet-village/maracas-water-falls.webp">
+<img src="images-projet-village/maracas-water-falls.webp" loading="lazy"  width="768" height="1024" alt="Cascade de Maracas">
+</picture>
+</a>
+Paramin et la cascade de Maracas<br>
 [Cliquer sur l'image pour l'agrandir.]<br><br>
 </div>
 </div>
@@ -754,9 +663,7 @@ de Trinidad"<br>
 </div><br>
 <div class="conteneur1">
 <div class="conteneur2">
-<iframe
-src="https://kaltura.scarlettentertainment.com/p/102/sp/10200/embedIframeJs/uiconf_id/23448172/partner_id/102?iframeembed=true&playerId=23448172&entry_id=0_aortxwxb"
-width="560" height="395"></iframe>
+<iframe src="https://kaltura.scarlettentertainment.com/p/102/sp/10200/embedIframeJs/uiconf_id/23448172/partner_id/102?iframeembed=true&playerId=23448172&entry_id=0_aortxwxb" width="560" height="395" title="Steelband à Trinidad &amp; Tobago"></iframe>
 </div>
 <span class="rouge tpetit">Trinidad &amp; Tobago&nbsp;: steel band</span>
 </div>
@@ -949,7 +856,13 @@ la gastronomie du «&nbsp;Pays reçu&nbsp;»</li>
 </ol><br>
 <p><i><b>Posons «&nbsp;ensemble les fondations d’une nouvelle espérance. Celle d’un universel poreux à toutes les cultures et à toutes les différences&nbsp;», si cher à Césaire.</b></i></p><br>
 <div class="center">
-<div class="image04"><img src="images-projet-village/Fondation-Aime-Cesaire.webp" width="454" height="374" alt="La fondation Aimé Césaire">La fondation Aimé Césaire - Ville de Fort de France</div>
+<div class="image04">
+<picture>
+<source srcset="images-projet-village/Fondation-Aime-Cesaire.webp">
+<img src="images-projet-village/Fondation-Aime-Cesaire.webp" loading="lazy"  width="454" height="374" alt="La fondation Aimé Césaire">
+</picture>
+La fondation Aimé Césaire - Ville de Fort de France
+</div>
 </div>
 <br>
 <p>Le projet «&nbsp;Village de Pays/Village Martinique&nbsp;», est par son essence même en écho avec les valeurs que portent la Fondation Aimé Césaire (FAC) qui a pour vocation la connaissance et le rayonnement dans les Caraïbes, aux Amériques, en Afrique et dans le monde, des valeurs fondatrices de la pensée d’Aimé Césaire au travers d’actions culturelles, éducatives, artistiques et toutes formes d’initiatives pédagogiques.</p><br>
@@ -967,7 +880,10 @@ Les compétences et la diversité ne manquent pas au Sermac, les talents pourrai
 </ul>
 <br>
 <div class="image06">
-<img src="images-projet-village/Cesaire-cartoon.jpg" width="415" height="415" alt="Aimé Césaire cartoonisé" style="border: solid 1px var(--rouge); border-radius: 400px">
+<picture>
+<source srcset="images-projet-village/Cesaire-cartoon.webp">
+<img src="images-projet-village/Cesaire-cartoon.webp" loading="lazy"  width="415" height="415" alt="Aimé Césaire cartoonisé" style="border: solid 1px var(--rouge); border-radius: 400px">
+</picture>
 Aimé Césaire par <a href="https://c-lestdesign.com/" target="_blank">Cédric Demiaude</a>
 </div>
 <br><hr class="point"><br>
@@ -1033,8 +949,14 @@ L’occasion supplémentaire de mettre en avant votre <b>«&nbsp;Label Qualité 
 </ul>
 <h4>En matière de formations avec&nbsp;:</h4>
 <p><b>Une sélection des meilleurs apprentis qui sera effectuée au sein des centres de formations dont vous avez la gestion, Skillfor Campus, l’École de gestion et de commerce et le Centre de formation des apprentis afin qu’ils participent à cette expérience enrichissante.</b></p><br>
-<div class="image07"><img src="images-projet-village/produits-du-terroir-(1).png" width="640" height="625"
-alt="produits de l'industrie agroalimentaire locale">Martinique&nbsp;: produits de l'industrie agroalimentaire locale</div>
+<div class="image05">
+<picture>
+<source srcset="images-projet-village/produits-du-terroir-(1).webp">
+<img src="images-projet-village/produits-du-terroir-(1).webp" loading="lazy"  width="640" height="639"
+alt="produits de l'industrie agroalimentaire locale">
+</picture>
+Martinique&nbsp;: produits de l'industrie agroalimentaire locale
+</div>
 <ul class="coche">
 <li>Partenariat avec l’EGC afin de proposer aux apprenants, une expérience internationale bilatérale et enrichissante.
 <ul class="disc">
@@ -1085,7 +1007,7 @@ alt="produits de l'industrie agroalimentaire locale">Martinique&nbsp;: produits 
 <div class="conteneur1">
 <div class="conteneur2">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/G89t9dI6xqE?si=poQrYeXcIZDGFaPX&amp;start=0"
-title="YouTube video player"></iframe>
+title="Images du tour des yoles 2024"></iframe>
 </div>
 <span class="rouge tpetit">Martinique, le «&nbsp;Tour des yoles&nbsp;»&nbsp;: un attrait touristique incontestable. (ici&nbsp;: images du tour 2024)</span>
 </div>
@@ -1124,9 +1046,14 @@ title="YouTube video player"></iframe>
 </ul>
 <br>
 <h4 class="centre">Carte des pays membres de la Caricom - (Wikimedia).</h4>
-<div class="image02">
-<img src="images-projet-village/Caricom_Member_states_2025.jpg" width="1280" height="766" alt="carte de la CARICOM"></div>
-
+<div class="image01">
+<picture>
+<source srcset="images-projet-village/Caricom_Member_states_2025.webp">
+<img src="images-projet-village/Caricom_Member_states_2025.webp" loading="lazy"  width="1280" height="766" alt="carte de la CARICOM">
+</picture>
+<p class="centre"><b>Carte des pays membres de la CARICOM en 2025</b></p>
+</div>
+<br>
 <p style="font-size: 16px; color:#a00; margin-top: -20px;
 margin-bottom: 5em;"><span style="color: #2D5F2C; background-color:#2D5F2C;">☐</span>
 &nbsp;<span style="font-size:12.86px;">Membres à part entière</span><br>
@@ -1350,7 +1277,13 @@ ATTENTION&nbsp;!</b></p>
 <b>Téléphone&nbsp;:</b> 06 96 32 63 00<br>
 <b>Web&nbsp;:</b> <a href="http://www.canopyeventdesign.com" target="_blank">www.canopyeventdesign.com</a><br>
 <b>Mail&nbsp;:</b> <a href="mailto:contact@canopyeventdesign.com" target="_blank">contact@canopyeventdesign.com</a></p>
-<div class="logo"><a href="http://www.canopyeventdesign.com" target="_blank"><img src="images-projet-village/logo-canopy.png" class="logo" width="300" height="100" alt="Logo de Canopy Event & Design"></a>
+<div class="logo">
+<a href="http://www.canopyeventdesign.com" target="_blank">
+<picture>
+<source srcset="images-projet-village/logo-canopy.webp">
+<img src="images-projet-village/logo-canopy.webp" loading="lazy"  class="logo" width="300" height="100" alt="Logo de Canopy Event & Design">
+</picture>
+</a>
 </div>
 </footer>
 </div>
@@ -1369,7 +1302,7 @@ modal.addEventListener('click', (event) => {
   }
 });
 </script>
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', () => {
   const password = prompt("Veuillez entrer le mot de passe pour accéder à cette page :");
   if (password !== "martinique") {
@@ -1379,6 +1312,6 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Bienvenue !");
   }
 });
-</script>
+</script> -->
 </body>
 </html>
