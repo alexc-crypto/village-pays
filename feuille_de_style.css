@@ -32,7 +32,7 @@ h3 {color: var(--marron); font-size: 1.4em; margin: 1em 0;}
 h4 {color: var(--marron); font-size: 1.1em; margin: 1em 0; font-weight: bold;}
 b {font-size: 110%; font-weight: 600;}
 .exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}
-a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 5px; border-radius: 3px;}
+a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 0; border-radius: 3px;}
 a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign {color: var(--blanc); background-color: var(--gris3); /* padding: 1px 5px; border-radius: 5px; */}
 .tpetit {font-size: 12.8px; line-height: normal;}
 .surlign {/*background-color: var(--jaune);*/ background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
