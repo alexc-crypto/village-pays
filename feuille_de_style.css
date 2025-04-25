@@ -163,7 +163,7 @@ th, td {padding: 4px;}
 /* Supprimer le padding excessif */
 .cartouche {padding: 1em;}
 /* Ajuster boutons/encarts */
-.bouton-toc {font-size: 1.2em; padding: 8px 15px; top: 0; /* margin-top: -50px; */}
+.bouton-toc {font-size: 1.2em; padding: 8px 15px; top: 0; margin-top: -50px;}
 /* Responsive design */
 a:link, a:visited, a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign{padding: 1px 0;}
 }
