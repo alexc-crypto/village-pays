@@ -22,9 +22,9 @@
 html {scroll-behavior: smooth;} /* effet de défilement régulier au document */
 html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%;line-height: 140%}
 body {font-size: 1em; font-family: var(--police2), Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif; background-color: var(--gris1); color: var(--noir); font-weight: 300; text-align: left;}
-.page {max-width: 1024px; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; font-weight: 300;}
-.roboto {font-family: "Roboto", sans-serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
-.playfair-display {font-family: "Playfair Display", serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal;}
+.page {max-width: 64rem; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; font-weight: 300;}
+.roboto {font-family: "Roboto", sans-serif; font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
+.playfair-display {font-family: "Playfair Display", serif; font-weight: 300; font-style: normal;}
 h1, h2, h3, h4 {font-family: inherit; font-weight: bold;}
 h1 {color: var(--marron); font-size: 3em; margin: 2em 0;}
 h2 {color: var(--marron); font-size: 2.5em; margin: 1em 0;}
@@ -34,7 +34,7 @@ b {font-size: 110%; font-weight: 600;}
 .exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}
 a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 0; border-radius: 3px;}
 a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign {color: var(--blanc); background-color: var(--gris3); /* padding: 1px 5px; border-radius: 5px; */}
-.tpetit {font-size: 12.8px; line-height: normal;}
+.tpetit {font-size: 0.8rem; line-height: normal;}
 .surlign {/*background-color: var(--jaune);*/ background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
 .surlign2 {background-color: var(--turquoise); padding: 1px 5px; margin: 0 3px; border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%; font-size: 1.1em;}
 /* .surlign3 {background-color: var(--turquoise);padding: 4px;margin: 0 3px;text-decoration: none;line-height: 120%; border-radius: 5px;} */
@@ -60,7 +60,7 @@ img:hover {transform: scale(1.02); transition: transform 0.3s ease-in-out;}
 .image08 {max-width: 128px; max-height: 106px; margin: 0; }
 .logo {max-width: 300px; max-height: 100px; margin: 0 1em 0 0; /*float: left;*/}
 .logo img {width: 80%;}
-.image01, .image02, .image04, .image05, .image05b, .image06, .image07, .image08, .logo {color: var(--rouge); display: block; font-size: 12.8px;}
+.image01, .image02, .image04, .image05, .image05b, .image06, .image07, .image08, .logo {color: var(--rouge); display: block; font-size: 0.8rem;}
 .image01, .image03, .image04 {margin: 0 auto;}
 .image04, .image06, .image08 {text-align: center;}
 .image02, .image05, .image07 {float: right; margin: 0 0 1em 1em;}
@@ -131,7 +131,8 @@ text-decoration: none; transition: color 0.3s;}
 /* Overlay pour améliorer la lisibilité du texte sur l'image */
 .hero::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);} 
 /* Overlay sombre semi-transparent */
-.ancre {margin: 0 auto; box-sizing: border-box; display: block; width: 0.1em; height:0.1em;}
+.ancre {height: 0.1em; display: block;}
+.ancre:hover {display:none;}
 .flag {max-width: 40px; max-height: 30px; vertical-align: middle; display: block; margin: 2px auto;}
 table.caricom {width: 100%; table-layout: fixed; font-size: 0.8em;}
 table.caricom td {height: 30px;}
@@ -175,8 +176,8 @@ th, td {padding: 4px;}
 .bouton-toc {font-size: 1.2em; padding: 8px 15px; top: 0;}
 /* Responsive design */
 a:link, a:visited, a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign{padding: 1px 0;}
-.ancre {height: 1em;}
 .hero {position: relative; height: 60vh;}
+.ancre {height: 1em; opacity: 0;}
 }
 
 
