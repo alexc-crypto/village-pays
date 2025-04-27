@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="feuille_de_style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="57x57" href="images-projet-village/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="images-projet-village/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images-projet-village/apple-icon-72x72.png">
@@ -126,13 +127,15 @@ rel="stylesheet">
 </ol>
 </li>
 </ol>
-<a href="#close" class="modal_close" aria-label="Fermer la popup"><span class="surlign">✖(close)</span></a>
+<a href="#close" class="modal_close" aria-label="Fermer la popup" tabindex="0"><span class="surlign">✖(close)</span></a>
 </div>
 </div>
 </div>
 <p><a href="#haut" class="surlign2 scroll-to-top">⬆️&nbsp;Haut&nbsp;</a></p>
+<a href="#main-content" class="skip-link">Passer au contenu</a>
 <h1 id="ref-01-00-00" class="exergue">Village de Pays - Village Martinique</h1>
-<main>
+<main id="main-content" tabindex="-1">
+<!-- Contenu principal -->
 <div class="page">
 <br style="margin-bottom: 5em;">
 <div class="cartouche">
@@ -199,7 +202,6 @@ talents, cuisiniers, vidéastes, concepteurs 3D, commerciaux bilingues, étudian
 <li><b>Créer une vraie réflexion stratégique</b> en fédérant le maximum de partenaires institutionnels et
 économiques autour du projet et en impliquant la diaspora expatriée.</li>
 </ul>
-
 <div class="image02">
 <picture>
 <source srcset="images-projet-village/70ec84db2.webp">
@@ -207,8 +209,8 @@ talents, cuisiniers, vidéastes, concepteurs 3D, commerciaux bilingues, étudian
 </picture>
 Produits de l'industrie agroalimentaire locale
 </div>
-<a class="ancre" id="ref-01-02-02"></a>
-<h3 style="margin-top: 2em; display: block;">Les axes</h3>
+<a id="ref-01-02-02"></a>
+<h3>Les axes</h3>
 <ol>
 <li><strong class="allsmall">Économie</strong><br>
 Opportunités d'import-export, d'investissements et de développement de partenariats commerciaux et artisanaux.
@@ -335,7 +337,7 @@ centres de formation ou d’écoles hôtelières/cuisine en soutien</li>
 <hr class="point"><br style="margin-bottom: 2em;">
 <div class="center">
 <span class="rondrouge-small">
-«&nbsp;Village de Pays&nbsp;»&nbsp;: Édition N°1
+<strong>«&nbsp;Village de Pays&nbsp;»&nbsp;: Édition N°1</strong>
 </span>
 </div>
 <a class="ancre" id="ref-01-05-00"></a>
@@ -489,12 +491,9 @@ title="La danse bélé à la Martinique"></iframe>
 <hr class="point" style="width: 60%;"><br>
 <div class="center">
 <span class="rondrouge-small">
-«&nbsp;Village de Pays&nbsp;»&nbsp;: Édition N°1
+<strong>«&nbsp;Village de Pays&nbsp;»&nbsp;: Édition N°1</strong>
 </span>
 </div>
-<!-- <a class="ancre" style="margin:1em 0;" id="ref-01-07-01"></a>
-<p>&nbsp;</p>
-<p>1&nbsp;ÉCONOMIE</p> -->
 <a class="ancre" id="ref-01-07-01"></a>
 <h3 class="allsmall">Le principe&nbsp;: un sujet d'intérêt commun porté par un référent martiniquais</h3>
 <h4 class="allsmall">Jeudi 16 octobre 2025</h4>
@@ -1312,6 +1311,6 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Bienvenue !");
   }
 });
-</script>
+</script> 
 </body>
 </html>
