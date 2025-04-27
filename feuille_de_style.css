@@ -85,12 +85,12 @@ ol {list-style-type: decimal;}
 .cartouche {max-width: 480px; margin: 0.5em auto; padding: 0.5em; background-color: var(--rose_transpa); color: var(--gris3);  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius: 0.5em; text-align: center; box-sizing: border-box; overflow: auto; hyphens: auto;}
 .medallion {display: block; text-align: center; margin: 0 auto; font-weight: bold; background-color: var(--marron); border-radius: 1em;}
 .medallion img {border-radius: 50%; margin-bottom: -1em;}
-.rondrouge, .rondrouge-small {max-width: 20em; max-height: 20em; margin: .1em auto; text-align: center; border: solid 2px var(--rouge); border-radius: 2em; font-variant-caps: all-small-caps; box-sizing: border-box; word-break: break-all; line-height: 1.2em; padding: 1em;}
+.rondrouge, .rondrouge-small {max-width: 20em; max-height: 20em; margin: .1em auto; text-align: center; border: solid 2px var(--rouge); border-radius: 2em; font-variant-caps: all-small-caps; box-sizing: border-box; word-break: normal; line-height: 1.2em; padding: 1em;}
 .rondrouge-small {display: inline-block;}
 .clearfix {clear: both;}
 .lateral {max-width: 26em; background-color: rgb(255,238,255,0.6); padding: 1px 5px; margin: 0 3px; text-decoration: none; line-height: 120%; border-radius: 0.5em; font-size: 1em; font-variant-caps: normal;}
 .rouge {color: var(--rouge);}
-table,th,td {border: solid 1px #7CA0B5; border-collapse: collapse; hyphens: auto; border-spacing: 0; overflow-wrap: break-word;}
+table,th,td {border: solid 1px #7CA0B5; border-collapse: collapse; hyphens: auto; border-spacing: 0;}
 table {margin: 0 auto; font-size: 1em; max-width: 1024px;}
 td {padding: 0 5px; margin: 0;}
 th {background-color: var(--marron); color: var(--blanc); text-align: center; font-size: 1.2em;}
@@ -115,7 +115,7 @@ iframe,video {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 /* Table des matières */
 .sommaire {width: 100%; max-height: 80vh; /* Limite la hauteur pour éviter un défilement excessif */ overflow-y: auto; /* Défilement vertical uniquement si nécessaire */
 padding: 1em; background-color: var(--rose_transpa);
-/* background-color: rgba(255, 238, 255, 0.95); */ /* Fond légèrement plus opaque */ color: var(--gris3); line-height: 1.2em; text-align: left; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); font-size: 1.2em; border-radius: 0.5em; box-sizing: border-box; word-break: break-all; hyphens: auto;}
+/* background-color: rgba(255, 238, 255, 0.95); */ /* Fond légèrement plus opaque */ color: var(--gris3); line-height: 1.2em; text-align: left; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); font-size: 1.2em; border-radius: 0.5em; box-sizing: border-box; word-break: normal; hyphens: auto;}
 .sommaire h2 {font-size: 1.5rem; /* color: #2c3e50;*/ /* Bleu nuit */ margin-bottom: 20px; text-align: center;}
 .sommaire ol {padding-left: 20px;}
 .sommaire ol li {margin: 8px 0;}
@@ -175,6 +175,8 @@ th, td {padding: 4px;}
 .bouton-toc {font-size: 1.2em; padding: 8px 15px; top: 0;}
 /* Responsive design */
 a:link, a:visited, a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign{padding: 1px 0;}
+.ancre {height: 1em;}
+.hero {position: relative; height: 60vh;}
 }
 
 
