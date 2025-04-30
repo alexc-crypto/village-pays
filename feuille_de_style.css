@@ -20,18 +20,18 @@
   --police2: "Roboto", sans-serif;
 }
 html {scroll-behavior: smooth;} /* effet de défilement régulier au document */
-html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%;line-height: 140%}
+html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%; line-height: 140%}
 body {font-size: 1em; font-family: var(--police2), Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif; background-color: var(--gris1); color: var(--noir); font-weight: 300; text-align: left;}
-.page {max-width: 64rem; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; font-weight: 300;}
-.roboto {font-family: "Roboto", sans-serif; font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
-.playfair-display {font-family: "Playfair Display", serif; font-weight: 300; font-style: normal;}
+.page {max-width: 64rem; padding: 3.05%; margin: 0 auto; background-color: var(--blanc); color: var(--noir); font-size: 1.2em; position: relative; top: -3rem; font-weight: 300;}
+.roboto {font-family: "Roboto", sans-serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal; font-variation-settings: "wdth" 100;}
+.playfair-display {font-family: "Playfair Display", serif; /* font-optical-sizing: auto; */ font-weight: 300; font-style: normal;}
 h1, h2, h3, h4 {font-family: inherit; font-weight: bold;}
 h1 {color: var(--marron); font-size: 3em; margin: 2em 0;}
 h2 {color: var(--marron); font-size: 2.5em; margin: 1em 0;}
 h3 {color: var(--marron); font-size: 1.4em; margin: 1em 0;}
 h4 {color: var(--marron); font-size: 1.1em; margin: 1em 0; font-weight: bold;}
 b {font-size: 110%; font-weight: 600;}
-.exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}
+/* .exergue {padding: 20px 5px; color: var(--blanc); background-color: var(--marron); text-decoration: none; margin: 0; text-align: center; font-size: 350%}  */
 a:link, a:visited {color: rgb(0, 102, 136); font-weight: bold; text-decoration: none; overflow-wrap: break-word; padding: 1px 0; border-radius: 3px;}
 a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign {color: var(--blanc); background-color: var(--gris3); /* padding: 1px 5px; border-radius: 5px; */}
 .tpetit {font-size: 0.8rem; line-height: normal;}
@@ -44,13 +44,10 @@ line-height: 160%; border-radius: 5px; font-size: 1em;}
 .surlign6 {background-color: rgb(255,255,0,0.8); transition: background-color 1s ease; padding: 1px 5px; margin: 0 3px;
 border-radius: 5px; box-shadow: 1px 1px 1px #ddd; text-decoration: none; line-height: 160%;}
 strong {font-weight: 900; font-size: 110%;}
-.centre {text-align: center;margin: 0.5em auto;}
+.centre {text-align: center;}
 img {border: none; width: 100%; height: auto}
-img:hover {transform: scale(1.02); transition: transform 0.3s ease-in-out;}
-.fade-in {opacity: 0; transform: translateY(10px); animation: fadeIn 0.8s ease forwards;}
-@keyframes fadeIn {to {opacity: 1; transform: none;}}
 .image01 {max-width: 1200px; max-height: 797px;} 
-.image02 {max-width: 292px; max-height: 1000px;} 
+.image02 {max-width: 292px; max-height: 1100px;} 
 .image03 {max-width: 480px; /* max-height:480px; */ color: var(--blanc); display: block; font-size: 0.9em; position: relative; top: 0; left: 0;}
 .image04 {max-width: 454px; max-height: 400px;}
 .image05 {max-width: 350px; max-height: 800px; margin: 0 0 1em 1em;}
@@ -65,7 +62,6 @@ img:hover {transform: scale(1.02); transition: transform 0.3s ease-in-out;}
 .image04, .image06, .image08 {text-align: center;}
 .image02, .image05, .image07 {float: right; margin: 0 0 1em 1em;}
 .point {height: 0; border: 3px dotted var(--rouge); border-bottom: 0; border-right: 0; border-left: 0; margin: 0 auto; background-color: transparent;}
-/* .icone {max-width: 48px; max-height: 62px; font-size: 150%; margin: 0; font-weight: bold; vertical-align: middle;} */
 blockquote {background: var(--gris4); border-left: 10px solid var(--marron); margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C" "\201D";}
 blockquote:before {color: var(--marron); content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em;}
 .allsmall {font-variant-caps: all-small-caps;}
@@ -82,7 +78,7 @@ blockquote:before {color: var(--marron); content: open-quote; font-size: 4em; li
 .disc li {margin-bottom: 0.2em; margin-top: 0.2em; line-height: 120%; font-size: 0.9em;}
 .disc li::before {display: inline-block; content: "•"; width: 1em; margin-left: -1em; color: var(--rouge);}
 ol {list-style-type: decimal;}
-.cartouche {max-width: 480px; margin: 0.5em auto; padding: 0.5em; background-color: var(--rose_transpa); color: var(--gris3);  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius: 0.5em; text-align: center; box-sizing: border-box; overflow: auto; hyphens: auto;}
+.cartouche {max-width: 480px; margin: 4rem auto 0 auto; padding: 0.5em; background-color: var(--rose_transpa); color: var(--gris3);  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); border-radius: 0.5em; text-align: center; box-sizing: border-box; overflow: auto; hyphens: auto;}
 .medallion {display: block; text-align: center; margin: 0 auto; font-weight: bold; background-color: var(--marron); border-radius: 1em;}
 .medallion img {border-radius: 50%; margin-bottom: -1em;}
 .rondrouge, .rondrouge-small {max-width: 20em; max-height: 20em; margin: .1em auto; text-align: center; border: solid 2px var(--rouge); border-radius: 2em; font-variant-caps: all-small-caps; box-sizing: border-box; word-break: normal; line-height: 1.2em; padding: 1em;}
@@ -104,35 +100,39 @@ tr:nth-child(even) {background-color: var(--gris4);}
 .conteneur2b {position: relative; line-height: normal; width: 100%; height: 0; margin:0 auto; color: var(--rouge); font-size: 85%; padding-bottom: 56.25%; /*vidéo 16:9*/}
 iframe,video {position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 /* Bouton pour ouvrir la popup - Grok3 */
-.bouton-toc {display: block; text-align: center; position: sticky; /*top: 20px;*/ top: -10px; left: 0; font-size: 1.5em; z-index: 1000; padding: 10px 20px; border-radius: 5px; margin-top: -60px; margin-bottom: 0;}
-/* background-color: #1abc9c; */ /* Turquoise */
 /* Popup */
 .modal {visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); /* Overlay sombre */ z-index: 1000; display: flex; justify-content: center; align-items: center;}
 .modal:target {visibility: visible; opacity: 1; transition: opacity 0.3s ease;}
 .modal:target .modal_content {transform: scale(1); opacity: 1;}
 /* Contenu de la popup */
-.modal_content {padding: 1.5em 2em; max-width: 900px; width: 90%; position:relative;transform: scale(0.9); transition: transform 0.3s ease, opacity 0.3s ease;}
+.modal_content {padding: 1.5em 2em; max-width: 900px; width: 90%; position: relative;transform: scale(0.9); transition: transform 0.3s ease, opacity 0.3s ease;}
 /* Table des matières */
 .sommaire {width: 100%; max-height: 80vh; /* Limite la hauteur pour éviter un défilement excessif */ overflow-y: auto; /* Défilement vertical uniquement si nécessaire */
 padding: 1em; background-color: var(--rose_transpa);
 /* background-color: rgba(255, 238, 255, 0.95); */ /* Fond légèrement plus opaque */ color: var(--gris3); line-height: 1.2em; text-align: left; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); font-size: 1.2em; border-radius: 0.5em; box-sizing: border-box; word-break: normal; hyphens: auto;}
-.sommaire h2 {font-size: 1.5rem; /* color: #2c3e50;*/ /* Bleu nuit */ margin-bottom: 20px; text-align: center;}
+.sommaire h2 {font-size: 1.5rem; margin-bottom: 20px; text-align: center;}
 .sommaire ol {padding-left: 20px;}
 .sommaire ol li {margin: 8px 0;}
 .sommaire ol li a {/* color: #1abc9c; *//* Turquoise */
 text-decoration: none; transition: color 0.3s;}
-.sommaire ol li a:hover, .sommaire ol li a:focus {/* color: #16a085; *//* Turquoise plus foncé */outline: none;}
+.sommaire ol li a:hover, .sommaire ol li a:focus {outline: none;}
 /* Bouton de fermeture */
 .modal_close {position: absolute; top: 2rem; right: 3rem; color: var(--gris6); font-size: 1.2rem; text-decoration: none; transition: color 0.3s;}
 .modal_close:hover, .modal_close:focus {color: var(--gris3);}
-/* Style du header avec l'image en arrière-plan */
-.hero {position: relative; height: 50vh; background-image: url('images-projet-village/Ville-de-Fort-de-France2.webp'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: space-between;}
+
 /* 50 vh Hauteur pleine écran */
-/* Overlay pour améliorer la lisibilité du texte sur l'image */
-.hero::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);} 
+
+.hero {max-width: 1920px; max-height: 1080px; display: block; margin: 0 auto;}
+
+/* .bouton-toc {display: block; text-align: center; position: sticky; top: 0; left: 0; font-size: 1.5em; z-index: 1000; padding: 0; border-radius: 5px; margin-top: 0; margin-bottom: 0;} */
+
+.bouton-toc  {text-align: center; position: sticky; top: 0; left: 0; display: block; z-index: 1000; font-size: 1.5rem;margin-top: 1rem}
+
+
+
+
 /* Overlay sombre semi-transparent */
-.ancre {height: 0.1em; display: block;}
-.ancre:hover {display:none;}
+.ancre {margin: 2em auto; box-sizing: border-box; display: block; width: 0.1em; height:0.1em;}
 .flag {max-width: 40px; max-height: 30px; vertical-align: middle; display: block; margin: 2px auto;}
 table.caricom {width: 100%; table-layout: fixed; font-size: 0.8em;}
 table.caricom td {height: 30px;}
@@ -142,13 +142,16 @@ table.caricom td {height: 30px;}
 .modal {visibility: hidden;  opacity: 0; transition: visibility 0.3s, opacity 0.3s ease-in-out;}
 .modal:target {visibility: visible; opacity: 1;}
 /* Bouton retour haut */
-.scroll-to-top {position: fixed; font-size: 1.2em; z-index: 1000; margin-bottom: 10px; right: 10px; transition: background-color 1s ease; color: #000; bottom: 3px;}
+.scroll-to-top {position: fixed; font-size: 1.2em; z-index: 100; bottom: 20px; right: 10px; transition: background-color 1s ease; color: #000;}
 /* lien d'évitement */
 .skip-link {position: absolute; top: -40px; left: 0; padding: 8px; background-color: #000; color: white;  z-index: 100;
   transition: top 0.2s ease;}
 .skip-link:focus {top: 0;}
 /* S'assurer que l'élément cible peut recevoir le focus */
 [tabindex='-1'] {outline: none;}
+
+.exergue {/*padding: 10px 5px;*/ color: var(--blanc);  background-color: var(--marron); text-decoration: none; display: block; margin: 0 auto; text-align: center; font-size: 3.5rem}
+
 
 @media screen and (max-width: 768px) {
 .center {display: flex; width: 100%; align-items: center; justify-content: center; font-size: 1em;}
@@ -170,15 +173,51 @@ body, .page {font-size: 1em;}
 /* Tables plus fluides (si besoin) */
 table {font-size: 0.9em; word-break: break-all;}
 th, td {padding: 4px;}
-/* Supprimer le padding excessif */
-.cartouche {padding: 1em;}
-/* Ajuster boutons/encarts */
-.bouton-toc {font-size: 1.2em; padding: 8px 15px; top: 0;}
+
 /* Responsive design */
 a:link, a:visited, a:hover, a:active, a:focus, a:hover span.surlign, a:active span.surlign, a:focus span.surlign{padding: 1px 0;}
-.hero {position: relative; height: 60vh;}
-.ancre {height: 1em; opacity: 0;}
+
+.hero {max-width: 770px; max-height: 45vh; display: block; margin: 0 auto;}
+.exergue {/*padding: 5px 5px 50px 5px; */
+display: block; background-color: #400; color: #fff; text-align: center; margin: 0 auto;"}
+
+/* Ajuster boutons/encarts */
+.bouton-toc {font-size: 1.2em; padding: 18px 15px; top: 0; margin-top: -50px;}
 }
 
 
-a[target="_blank"]:after {content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E); margin: 0 3px 0 1px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+*/
+
