@@ -148,7 +148,7 @@ table.caricom td {height: 30px;}
 .exergue {/*padding: 10px 5px;*/ color: var(--blanc);  background-color: var(--marron); text-decoration: none; display: block; margin: 0 auto; text-align: center; font-size: 3.5rem}
 
 /* ---------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 638px) {
 .center {display: flex; width: 100%; align-items: center; justify-content: center; font-size: 1em;}
 .rondrouge, .rondrouge-small {max-width: 16em; font-size: 1em; padding: 1em; border-radius: 1em;}
 .rondrouge-small {padding: .4em; margin-top: .4em;}
