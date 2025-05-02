@@ -9,9 +9,6 @@
 <link rel="stylesheet" href="feuille_de_style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="57x57" href="images-projet-village/apple-icon-57x57.png">
@@ -40,16 +37,42 @@ a[target="_blank"]:after {content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ 
 <header class="hero" id="haut">
 <div class="hero-content" style="margin-bottom: -5px;">
 <p style="margin-bottom: -1.5rem; position: absolute; top: 10px; left: 10px">La baie de Fort de France</p>
-<picture>
+<!-- <picture>
 <source media="(max-width:768px)"  srcset="images-projet-village/Ville-de-Fort-de-France4.webp">
 
 <source media="(min-width:768px)" srcset="images-projet-village/Ville-de-Fort-de-France3.webp">
 
 <img src="images-projet-village/Ville-de-Fort-de-France3.webp" alt="baie de Fort de France" loading="lazy" width="2000" height="474">
+</picture> -->
+
+
+<picture style="position: relative; z-index: 2000;">
+  <source media="(min-width:768px)"
+          srcset="images-projet-village/Ville-de-Fort-de-France3.webp">
+  <source media="(max-width:767px)"
+          srcset="images-projet-village/Ville-de-Fort-de-France4.webp">
+  <img loading="lazy" decoding="async"
+       srcset="images-projet-village/Ville-de-Fort-de-France3.webp 2000w,
+               images-projet-village/Ville-de-Fort-de-France4.webp 770w"
+       sizes="(min-width:768px) 100vw, 100vw"
+       src="images-projet-village/Ville-de-Fort-de-France3.webp"
+       width="2000" height="474"
+       alt="baie de Fort de France">
 </picture>
+
+
+
+
+
 </div>
 </header>
 <h1 id="ref-01-00-00" style="background-color: var(--marron); color: var(--blanc); font-size: 3.5rem; text-align: center; margin: -0.5rem auto ; display: block; box-sizing: border-box; padding: 0.5rem 0 0.5rem 0; position: relative; z-index: 10;">Village de Pays - Village Martinique</h1>
+
+
+
+
+
+
 
 <!-- Bouton pour ouvrir la popup -->
 <div class="bouton-toc">
@@ -1301,7 +1324,7 @@ modal.addEventListener('click', (event) => {
   }
 });
 </script>
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', () => {
   const password = prompt("Veuillez entrer le mot de passe pour accéder à cette page :");
   if (password !== "martinique") {
@@ -1311,6 +1334,6 @@ document.addEventListener('DOMContentLoaded', () => {
     alert("Bienvenue !");
   }
 });
-</script>
+</script> -->
 </body>
 </html>
