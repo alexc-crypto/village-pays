@@ -18,6 +18,14 @@
   --rose_transpa: rgba(255, 238, 255, 0.9);
   --police1: "Playfair Display", serif;
   --police2: "Roboto", sans-serif;}
+  
+  
+a[target="_blank"]:after {
+content: url(data:image/svg+xml,%3Csvg\ width=\'16\'\ height=\'16\'\ viewBox=\'0\ -3\ 24\ 24\'\ fill=\'none\'\ xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath\ d=\'M11.7057\ 13.7071L17.9986\ 7.41421V11H19.9986V4H12.9986V6H16.5844L10.2915\ 12.2929L11.7057\ 13.7071Z\'\ fill=\'%23068\'/%3E%3Cpath\ d=\'M19.0015\ 18V14H17.0015V18H6.00146V7H10.0015V5H6.00146C4.8969\ 5\ 4.00146\ 5.89543\ 4.00146\ 7V18C4.00146\ 19.1046\ 4.8969\ 20\ 6.00146\ 20H17.0015C18.106\ 20\ 19.0015\ 19.1046\ 19.0015\ 18Z\'\ fill=\'%23068\'/%3E%3C/svg%3E); margin: 0 3px 0 1px}
+  
+  
+  
+  
 html {scroll-behavior: smooth;} /* effet de défilement régulier au document */
 html,body,div,h1,h2,h3,h4,p {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; font-size: 100%; line-height: 140%}
 body {font-size: 1em; font-family: var(--police2), Trebuchet MS, Verdana, Arial, Geneva, Helvetica, sans-serif; background-color: var(--gris1); color: var(--noir); font-weight: 300; text-align: left;}
@@ -85,9 +93,9 @@ ol {list-style-type: decimal;}
 .lateral {max-width: 26em; background-color: rgb(255,238,255,0.6); padding: 1px 5px; margin: 0 3px; text-decoration: none; line-height: 120%; border-radius: 0.5em; font-size: 1em; font-variant-caps: normal;}
 .rouge {color: var(--rouge);}
 table,th,td {border: solid 1px #7CA0B5; border-collapse: collapse; hyphens: auto; border-spacing: 0;}
-table {margin: 0 auto; font-size: 1em; max-width: 1024px;}
+table {margin: 0 auto; font-size: 1rem; max-width: 64rem;}
 td {padding: 0 5px; margin: 0;}
-th {background-color: var(--marron); color: var(--blanc); text-align: center; font-size: 1.2em;}
+th {background-color: var(--marron); color: var(--blanc); text-align: center; font-size: 1.2rem;}
 tr:hover {background-color: var(--gris5);}
 tr:nth-child(even) {background-color: var(--gris4);}
 .droite {text-align: right}
@@ -179,6 +187,7 @@ display: block; background-color: var(--marron); color: var(--blanc); text-align
 /* Ajuster boutons/encarts */
 .bouton-toc {font-size: 1.2em; padding: 18px 15px; top: 0; margin-top: -50px;}
 }
+
 
 
 
